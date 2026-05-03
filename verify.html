@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JC Dems — Link Verification</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1a56db; --blue-light: #e8f0fe; --green: #057a55; --green-light: #def7ec;
+    --red: #e02424; --red-light: #fde8e8; --yellow: #9f580a; --yellow-light: #feecdc;
+    --gray: #6b7280; --border: #e5e7eb; --bg: #f9fafb;
+  }
+  body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: #111827; height: 100vh; display: flex; flex-direction: column; }
+
+  /* Header */
+  header { background: var(--blue); color: white; padding: 12px 20px; display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+  header h1 { font-size: 1.1rem; font-weight: 700; flex: 1; }
+  .progress-wrap { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; }
+  .progress-bar { width: 200px; height: 8px; background: rgba(255,255,255,0.3); border-radius: 4px; overflow: hidden; }
+  .progress-fill { height: 100%; background: #34d399; border-radius: 4px; transition: width 0.3s; }
+  #progress-text { white-space: nowrap; }
+  .save-btn { background: white; color: var(--blue); border: none; padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+  .save-btn:hover { background: #f0f4ff; }
+
+  /* Layout */
+  .layout { display: flex; flex: 1; overflow: hidden; }
+
+  /* Sidebar */
+  aside { width: 280px; border-right: 1px solid var(--border); overflow-y: auto; flex-shrink: 0; background: white; }
+  .sidebar-search { padding: 10px 12px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: white; z-index: 1; }
+  .sidebar-search input { width: 100%; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; }
+  .level-group { padding: 6px 0; }
+  .level-header { padding: 6px 12px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray); background: var(--bg); border-bottom: 1px solid var(--border); }
+  .sidebar-item { display: flex; align-items: center; gap: 8px; padding: 7px 12px; cursor: pointer; font-size: 0.83rem; border-left: 3px solid transparent; transition: background 0.1s; }
+  .sidebar-item:hover { background: var(--blue-light); }
+  .sidebar-item.active { background: var(--blue-light); border-left-color: var(--blue); font-weight: 600; }
+  .sidebar-item .name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sidebar-item .badge { font-size: 0.7rem; padding: 1px 5px; border-radius: 10px; flex-shrink: 0; }
+  .badge-done { background: var(--green-light); color: var(--green); }
+  .badge-partial { background: var(--yellow-light); color: var(--yellow); }
+  .badge-none { background: var(--border); color: var(--gray); }
+  .badge-nolinks { background: #f3f4f6; color: #9ca3af; font-style: italic; }
+
+  /* Main */
+  main { flex: 1; overflow-y: auto; padding: 24px; }
+  .candidate-card { max-width: 700px; }
+  .card-header { margin-bottom: 20px; }
+  .card-header h2 { font-size: 1.4rem; font-weight: 700; }
+  .card-header .office { color: var(--gray); font-size: 0.9rem; margin-top: 2px; }
+  .card-header .level-badge { display: inline-block; font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; font-weight: 600; margin-top: 6px; }
+  .level-federal { background: #ede9fe; color: #5b21b6; }
+  .level-state { background: #dbeafe; color: #1e40af; }
+  .level-county { background: #fef3c7; color: #92400e; }
+  .level-metro { background: #d1fae5; color: #065f46; }
+
+  .links-section h3 { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray); margin-bottom: 12px; }
+  .no-links { color: var(--gray); font-style: italic; font-size: 0.9rem; padding: 12px 0; }
+
+  .link-row { display: flex; align-items: flex-start; gap: 10px; padding: 12px; background: white; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; transition: border-color 0.2s; }
+  .link-row.verified { border-color: var(--green); background: var(--green-light); }
+  .link-row.rejected { border-color: var(--red); background: var(--red-light); opacity: 0.7; }
+  .link-icon { font-size: 1.2rem; flex-shrink: 0; width: 28px; text-align: center; padding-top: 2px; }
+  .link-body { flex: 1; min-width: 0; }
+  .link-type { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray); margin-bottom: 2px; }
+  .link-url { font-size: 0.82rem; color: var(--blue); word-break: break-all; text-decoration: none; }
+  .link-url:hover { text-decoration: underline; }
+  .edit-field { width: 100%; margin-top: 6px; padding: 5px 8px; border: 1px solid var(--border); border-radius: 5px; font-size: 0.82rem; }
+  .link-actions { display: flex; gap: 6px; flex-shrink: 0; align-items: flex-start; padding-top: 2px; }
+  .btn { border: none; padding: 5px 10px; border-radius: 5px; font-size: 0.78rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+  .btn-open { background: var(--blue-light); color: var(--blue); }
+  .btn-open:hover { background: #c7d9fb; }
+  .btn-ok { background: var(--green-light); color: var(--green); }
+  .btn-ok:hover { background: #b3e9d8; }
+  .btn-ok.active { background: var(--green); color: white; }
+  .btn-bad { background: var(--red-light); color: var(--red); }
+  .btn-bad:hover { background: #fbc9c9; }
+  .btn-bad.active { background: var(--red); color: white; }
+
+  .add-link-section { margin-top: 16px; }
+  .add-link-section h3 { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray); margin-bottom: 10px; }
+  .add-link-row { display: flex; gap: 8px; margin-bottom: 8px; align-items: center; }
+  .add-link-row select { padding: 5px 8px; border: 1px solid var(--border); border-radius: 5px; font-size: 0.82rem; background: white; }
+  .add-link-row input { flex: 1; padding: 5px 8px; border: 1px solid var(--border); border-radius: 5px; font-size: 0.82rem; }
+  .btn-add { background: var(--blue); color: white; padding: 5px 12px; border-radius: 5px; font-size: 0.82rem; font-weight: 600; border: none; cursor: pointer; }
+
+  .nav-row { display: flex; gap: 10px; margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border); }
+  .btn-nav { padding: 8px 18px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; border: 1px solid var(--border); background: white; cursor: pointer; }
+  .btn-nav:hover { background: var(--blue-light); border-color: var(--blue); }
+  .btn-nav:disabled { opacity: 0.4; cursor: default; }
+
+  .empty-state { display: flex; align-items: center; justify-content: center; height: 100%; color: var(--gray); font-size: 1rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>JC Dems 2026 — Link Verification</h1>
+  <div class="progress-wrap">
+    <div class="progress-bar"><div class="progress-fill" id="prog-fill"></div></div>
+    <span id="progress-text">0 / 0 verified</span>
+  </div>
+  <button class="save-btn" onclick="exportJSON()">Export JSON</button>
+</header>
+<div class="layout">
+  <aside>
+    <div class="sidebar-search">
+      <input type="text" id="search" placeholder="Search candidates..." oninput="filterSidebar(this.value)">
+    </div>
+    <div id="sidebar-list"></div>
+  </aside>
+  <main id="main">
+    <div class="empty-state">Select a candidate from the sidebar</div>
+  </main>
+</div>
+
+<script>
+const CANDIDATES = [
+  {
+    "id": "us-senate-ky::Joshua Blanton",
+    "name": "Joshua Blanton",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "website_url": "https://joshuablantonsr.com/",
+      "twitter_url": "https://x.com/JoshuaBlantonSr"
+    }
+  },
+  {
+    "id": "us-senate-ky::Charles Booker",
+    "name": "Charles Booker",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/charles-booker-3",
+      "website_url": "https://charlesbooker.org/",
+      "facebook_url": "https://www.facebook.com/Booker4KY/",
+      "twitter_url": "https://twitter.com/Booker4KY",
+      "instagram_url": "https://www.instagram.com/booker4ky/"
+    }
+  },
+  {
+    "id": "us-senate-ky::Logan Forsythe",
+    "name": "Logan Forsythe",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/logan-forsythe-1",
+      "website_url": "https://loganforsythe.com/",
+      "facebook_url": "https://www.facebook.com/loganforsytheky",
+      "twitter_url": "https://x.com/loganforky",
+      "instagram_url": "https://www.instagram.com/loganforsytheky/"
+    }
+  },
+  {
+    "id": "us-senate-ky::Amy McGrath",
+    "name": "Amy McGrath",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/amy-mcgrath-2",
+      "website_url": "https://amymcgrath.com/",
+      "facebook_url": "https://www.facebook.com/AmyMcGrathKY",
+      "twitter_url": "https://twitter.com/AmyMcGrathKY",
+      "instagram_url": "https://www.instagram.com/amymcgrathky/"
+    }
+  },
+  {
+    "id": "us-senate-ky::Dale Romans",
+    "name": "Dale Romans",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/dale-romans-1",
+      "website_url": "https://daleromans.com/",
+      "facebook_url": "https://www.facebook.com/daleforkentucky",
+      "twitter_url": "https://x.com/DaleRomansKY",
+      "instagram_url": "https://www.instagram.com/daleromans/"
+    }
+  },
+  {
+    "id": "us-senate-ky::Pamela Stevenson",
+    "name": "Pamela Stevenson",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/pamela-stevenson-1",
+      "website_url": "https://www.stevensonforsenate.com/",
+      "facebook_url": "https://www.facebook.com/PamForAG/",
+      "twitter_url": "https://x.com/ColPamStevenson",
+      "instagram_url": "https://www.instagram.com/colpamstevenson"
+    }
+  },
+  {
+    "id": "us-senate-ky::Vincent Thompson",
+    "name": "Vincent Thompson",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/vincentthompsoncampaignfund",
+      "facebook_url": "https://www.facebook.com/vincentanthonythompson2026ussenate/"
+    }
+  },
+  {
+    "id": "us-house-ky03::Morgan McGarvey",
+    "name": "Morgan McGarvey",
+    "office": "U.S. House of Representatives D3",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/bs_mcg_web_fr",
+      "website_url": "https://www.morganmcgarvey.com/",
+      "facebook_url": "https://www.facebook.com/MorganMcGarveyForCongress",
+      "twitter_url": "https://twitter.com/MorganMcGarvey",
+      "instagram_url": "https://www.instagram.com/morgan_mcgarvey/"
+    }
+  },
+  {
+    "id": "us-house-ky02::William Dakota Compton",
+    "name": "William Dakota Compton",
+    "office": "U.S. House of Representatives D2",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/compton4congress2026",
+      "website_url": "https://www.williamcompton.com",
+      "facebook_url": "https://www.facebook.com/Compton4KY2024/",
+      "twitter_url": "https://x.com/compton4ky2022",
+      "instagram_url": "https://www.instagram.com/compton4ky2026/"
+    }
+  },
+  {
+    "id": "us-house-ky02::David Hatfield",
+    "name": "David Hatfield",
+    "office": "U.S. House of Representatives D2",
+    "level": "federal",
+    "links": {}
+  },
+  {
+    "id": "us-house-ky02::Hank Linderman",
+    "name": "Hank Linderman",
+    "office": "U.S. House of Representatives D2",
+    "level": "federal",
+    "links": {
+      "website_url": "https://www.hank4ky.com/",
+      "facebook_url": "https://www.facebook.com/hank4ky/",
+      "twitter_url": "https://twitter.com/hank4ky"
+    }
+  },
+  {
+    "id": "us-house-ky02::Megan Wingfield",
+    "name": "Megan Wingfield",
+    "office": "U.S. House of Representatives D2",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/megan-wingfield-1",
+      "website_url": "https://meganwingfieldforcongress.com/",
+      "facebook_url": "https://www.facebook.com/megan.wingfield.for.congress/",
+      "twitter_url": "https://twitter.com/megan_wingfield",
+      "instagram_url": "https://www.instagram.com/megannwingfieldd/"
+    }
+  },
+  {
+    "id": "ky-senate-06::Christian Furman",
+    "name": "Christian Furman",
+    "office": "Kentucky State Senate D6",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/christian-furman",
+      "website_url": "https://christianforky.com/",
+      "facebook_url": "https://www.facebook.com/christianforky",
+      "twitter_url": "https://x.com/christianforky",
+      "instagram_url": "https://www.instagram.com/christianforky"
+    }
+  },
+  {
+    "id": "ky-senate-06::Chaz Stoess",
+    "name": "Chaz Stoess",
+    "office": "Kentucky State Senate D6",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/chazstoess",
+      "website_url": "https://chazforky.com/",
+      "facebook_url": "https://www.facebook.com/chaz4ky",
+      "instagram_url": "https://www.instagram.com/chazforky/"
+    }
+  },
+  {
+    "id": "ky-senate-35::Keturah Herron",
+    "name": "Keturah Herron",
+    "office": "Kentucky State Senate D35",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/keturah-herron-for-state-senate",
+      "website_url": "https://www.keturahherron.com/",
+      "facebook_url": "https://www.facebook.com/KeturahHerronforKYSenate/",
+      "twitter_url": "https://twitter.com/KeturahHerron",
+      "instagram_url": "https://www.instagram.com/keturah.herron/"
+    }
+  },
+  {
+    "id": "ky-senate-36::Sarah Cole McIntosh",
+    "name": "Sarah Cole McIntosh",
+    "office": "Kentucky State Senate D36",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/scm-website",
+      "website_url": "https://www.sarahcolemcintosh.com/",
+      "twitter_url": "https://x.com/SarahColeMcInt1"
+    }
+  },
+  {
+    "id": "ky-senate-36::Luke Whitehead",
+    "name": "Luke Whitehead",
+    "office": "Kentucky State Senate D36",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/luke-whitehead-1",
+      "website_url": "https://whiteheadforsenate.com/",
+      "facebook_url": "https://www.facebook.com/LukeWhitehead24/",
+      "instagram_url": "https://www.instagram.com/luke_whitehead24/"
+    }
+  },
+  {
+    "id": "ky-senate-37::Gary Clemons",
+    "name": "Gary Clemons",
+    "office": "Kentucky State Senate D37",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/gary-clemons-1",
+      "website_url": "https://garyclemons.com/",
+      "facebook_url": "https://www.facebook.com/GaryClemonsForSenate37",
+      "instagram_url": "https://www.instagram.com/garyclemonssenate37/"
+    }
+  },
+  {
+    "id": "ky-senate-26::Karen Berg",
+    "name": "Karen Berg",
+    "office": "Kentucky State Senate D26",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/kysdcccwebsite",
+      "website_url": "https://karenforkentucky.com/",
+      "facebook_url": "https://www.facebook.com/StateSenatorKarenBerg/",
+      "twitter_url": "https://twitter.com/karenforky"
+    }
+  },
+  {
+    "id": "ky-house-28::Almaria Baker",
+    "name": "Almaria Baker",
+    "office": "Kentucky State House D28",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/team-baker-1",
+      "website_url": "https://www.bakerforhouse28.com/",
+      "facebook_url": "https://www.facebook.com/people/Baker-for-State-House-D-28/61556897897015/"
+    }
+  },
+  {
+    "id": "ky-house-29::Cassie Blausey",
+    "name": "Cassie Blausey",
+    "office": "Kentucky State House D29",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/cassieblausey",
+      "website_url": "https://cassieblausey.com/",
+      "facebook_url": "https://www.facebook.com/cassieblausey",
+      "twitter_url": "https://x.com/cassieblausey",
+      "instagram_url": "https://www.instagram.com/cassieblausey/"
+    }
+  },
+  {
+    "id": "ky-house-30::Daniel Grossberg",
+    "name": "Daniel Grossberg",
+    "office": "Kentucky State House D30",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/repgrossberg",
+      "website_url": "https://www.grossberg4ky.com/",
+      "facebook_url": "https://www.facebook.com/grossberg4ky",
+      "twitter_url": "https://twitter.com/grossberg4ky",
+      "instagram_url": "https://www.instagram.com/grossberg4ky/"
+    }
+  },
+  {
+    "id": "ky-house-30::Cassie Lyles",
+    "name": "Cassie Lyles",
+    "office": "Kentucky State House D30",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/cassie-lyles-1",
+      "website_url": "https://cassielyles.com/",
+      "facebook_url": "https://www.facebook.com/profile.php?id=61575024633957",
+      "instagram_url": "https://www.instagram.com/cassielyles4kyhouse30/"
+    }
+  },
+  {
+    "id": "ky-house-30::Max Morley",
+    "name": "Max Morley",
+    "office": "Kentucky State House D30",
+    "level": "state",
+    "links": {
+      "website_url": "https://www.maxforky.com/",
+      "facebook_url": "https://www.facebook.com/profile.php?id=61569505973325",
+      "twitter_url": "https://x.com/maxwellmorley",
+      "instagram_url": "https://www.instagram.com/maxforky/"
+    }
+  },
+  {
+    "id": "ky-house-30::Mitra Subedi",
+    "name": "Mitra Subedi",
+    "office": "Kentucky State House D30",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/elect-mitra-subedi-as-state-representative-1",
+      "website_url": "https://www.subedihouse30.com/",
+      "facebook_url": "https://www.facebook.com/p/Mitra-Subedi-61556215592834/"
+    }
+  },
+  {
+    "id": "ky-house-31::Tim Hall",
+    "name": "Tim Hall",
+    "office": "Kentucky State House D31",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/tim-hall-1"
+    }
+  },
+  {
+    "id": "ky-house-32::Tina Bojanowski",
+    "name": "Tina Bojanowski",
+    "office": "Kentucky State House D32",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/tinaforkentucky",
+      "website_url": "https://www.tinaforkentucky.com/",
+      "facebook_url": "https://www.facebook.com/tinaforkentucky/",
+      "twitter_url": "https://x.com/tinaforkentucky",
+      "instagram_url": "https://www.instagram.com/tinaforkentucky/"
+    }
+  },
+  {
+    "id": "ky-house-33::Jennifer Hardin",
+    "name": "Jennifer Hardin",
+    "office": "Kentucky State House D33",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/jennifer-hardin-1",
+      "website_url": "https://www.hardin4ky.com/",
+      "facebook_url": "https://www.facebook.com/hardin4ky/",
+      "instagram_url": "https://www.instagram.com/hardin4ky/"
+    }
+  },
+  {
+    "id": "ky-house-33::Tarah Combs LeBlanc",
+    "name": "Tarah Combs LeBlanc",
+    "office": "Kentucky State House D33",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/tarahforky",
+      "website_url": "https://tarahforky.com/",
+      "facebook_url": "https://www.facebook.com/profile.php?id=61584679924878",
+      "instagram_url": "https://www.instagram.com/tarahforky/"
+    }
+  },
+  {
+    "id": "ky-house-34::Sarah Stalker",
+    "name": "Sarah Stalker",
+    "office": "Kentucky State House D34",
+    "level": "state",
+    "links": {
+      "website_url": "https://www.sarahforky.com/",
+      "facebook_url": "https://www.facebook.com/SarahStalkerforKY",
+      "twitter_url": "https://x.com/sarahforky",
+      "instagram_url": "https://www.instagram.com/sarahforky/"
+    }
+  },
+  {
+    "id": "ky-house-35::Lisa Willner",
+    "name": "Lisa Willner",
+    "office": "Kentucky State House D35",
+    "level": "state",
+    "links": {
+      "website_url": "https://lisawillner.com/",
+      "facebook_url": "https://www.facebook.com/lisaforkyhouse/",
+      "twitter_url": "https://x.com/lgwillner"
+    }
+  },
+  {
+    "id": "ky-house-36::William \"Woody\" Zorn",
+    "name": "William \"Woody\" Zorn",
+    "office": "Kentucky State House D36",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/zornky36",
+      "facebook_url": "https://www.facebook.com/Woody4KY/",
+      "twitter_url": "https://x.com/woodyzorn",
+      "instagram_url": "https://www.instagram.com/woody4ky/"
+    }
+  },
+  {
+    "id": "ky-house-38::Rachel Roarx",
+    "name": "Rachel Roarx",
+    "office": "Kentucky State House D38",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/committee-to-elect-rachel-roarx-1",
+      "website_url": "https://rachelroarx.com/",
+      "facebook_url": "https://www.facebook.com/rachelroarxdistrict38/",
+      "twitter_url": "https://x.com/RachelRoarx",
+      "instagram_url": "https://www.instagram.com/rachelroarxdistrict38/"
+    }
+  },
+  {
+    "id": "ky-house-40::Patrick Bryant Dunegan",
+    "name": "Patrick Bryant Dunegan",
+    "office": "Kentucky State House D40",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/patrick-dunegan-1"
+    }
+  },
+  {
+    "id": "ky-house-40::Nima Kulkarni",
+    "name": "Nima Kulkarni",
+    "office": "Kentucky State House D40",
+    "level": "state",
+    "links": {
+      "website_url": "https://www.votenima.com/",
+      "facebook_url": "https://www.facebook.com/StateRepresentativeNimaKulkarni/",
+      "twitter_url": "https://x.com/RepNimaKulkarni",
+      "instagram_url": "https://www.instagram.com/repnimakulkarni/"
+    }
+  },
+  {
+    "id": "ky-house-41::Mary Lou Marzian",
+    "name": "Mary Lou Marzian",
+    "office": "Kentucky State House D41",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/state-campaign-fund-for-mary-marzian-1",
+      "facebook_url": "https://www.facebook.com/RepMLMarzian",
+      "twitter_url": "https://x.com/MaryLouMarzian"
+    }
+  },
+  {
+    "id": "ky-house-42::Joshua Watkins",
+    "name": "Joshua Watkins",
+    "office": "Kentucky State House D42",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/re-elect-watkins-for-42",
+      "website_url": "https://votejoshuawatkins.com/",
+      "facebook_url": "https://www.facebook.com/joshua4kentucky/",
+      "instagram_url": "https://www.instagram.com/joshua4kentucky/"
+    }
+  },
+  {
+    "id": "ky-house-43::Robert LeVertis Bell",
+    "name": "Robert LeVertis Bell",
+    "office": "Kentucky State House D43",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/robert-levertis-bell-1",
+      "website_url": "https://bell4ky.com/",
+      "facebook_url": "https://www.facebook.com/bell4ky/",
+      "twitter_url": "https://twitter.com/bell4ky",
+      "instagram_url": "https://www.instagram.com/robertlevertisbell/"
+    }
+  },
+  {
+    "id": "ky-house-43::Joi McAtee",
+    "name": "Joi McAtee",
+    "office": "Kentucky State House D43",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/joi-mcatee-1",
+      "website_url": "https://joimcatee.com/",
+      "facebook_url": "https://www.facebook.com/joiforkentucky/",
+      "instagram_url": "https://www.instagram.com/joiforkentucky/"
+    }
+  },
+  {
+    "id": "ky-house-44::Beverly Chester-Burton",
+    "name": "Beverly Chester-Burton",
+    "office": "Kentucky State House D44",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/bcb4ky",
+      "facebook_url": "https://www.facebook.com/bcb4ky/"
+    }
+  },
+  {
+    "id": "ky-house-44::Jesten S. Slaw",
+    "name": "Jesten S. Slaw",
+    "office": "Kentucky State House D44",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/slawforky"
+    }
+  },
+  {
+    "id": "ky-house-44::Kenya Wade",
+    "name": "Kenya Wade",
+    "office": "Kentucky State House D44",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/winwithwade.com",
+      "website_url": "https://kenyaforkentucky.com/",
+      "facebook_url": "https://www.facebook.com/kenyaforkentucky/"
+    }
+  },
+  {
+    "id": "ky-house-46::Al Gentry",
+    "name": "Al Gentry",
+    "office": "Kentucky State House D46",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/al-gentry",
+      "website_url": "https://www.algentryforkentucky.com/",
+      "facebook_url": "https://www.facebook.com/kyalgentry/"
+    }
+  },
+  {
+    "id": "ky-house-48::Nathan Bellows",
+    "name": "Nathan Bellows",
+    "office": "Kentucky State House D48",
+    "level": "state",
+    "links": {
+      "website_url": "https://nathanbellowsforky.com/",
+      "facebook_url": "https://www.facebook.com/nathanbellowsforky/",
+      "instagram_url": "https://www.instagram.com/nathanbellowsforky/"
+    }
+  },
+  {
+    "id": "ky-house-48::Suhas Kulkarni",
+    "name": "Suhas Kulkarni",
+    "office": "Kentucky State House D48",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/suhas48",
+      "website_url": "https://suhas48.com/",
+      "facebook_url": "https://www.facebook.com/Suhas48th/"
+    }
+  },
+  {
+    "id": "jefferson-pva::Colleen Younger",
+    "name": "Colleen Younger",
+    "office": "Property Valuation Administrator (PVA)",
+    "level": "county",
+    "links": {
+      "website_url": "https://youngerforlouisvillepva.org",
+      "facebook_url": "https://www.facebook.com/ColleenYoungerforPVA/"
+    }
+  },
+  {
+    "id": "jefferson-judge-executive::Queenie Averette",
+    "name": "Queenie Averette",
+    "office": "County Judge Executive",
+    "level": "county",
+    "links": {}
+  },
+  {
+    "id": "jefferson-county-attorney::Sarah Martin",
+    "name": "Sarah Martin",
+    "office": "County Attorney",
+    "level": "county",
+    "links": {
+      "website_url": "https://votesarahmartin.com",
+      "facebook_url": "https://www.facebook.com/votesarahmartin",
+      "twitter_url": "https://x.com/votesarahmartin",
+      "instagram_url": "https://www.instagram.com/votesarahmartin/"
+    }
+  },
+  {
+    "id": "jefferson-county-attorney::Karl Price",
+    "name": "Karl Price",
+    "office": "County Attorney",
+    "level": "county",
+    "links": {
+      "website_url": "https://www.votekarlprice.com",
+      "facebook_url": "https://www.facebook.com/votekarlprice",
+      "twitter_url": "https://x.com/kplawlive",
+      "instagram_url": "https://www.instagram.com/votekarlprice/"
+    }
+  },
+  {
+    "id": "jefferson-county-clerk::Rosalind \"Roz\" Welch",
+    "name": "Rosalind \"Roz\" Welch",
+    "office": "County Clerk",
+    "level": "county",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/rosalind--roz--welch-1",
+      "website_url": "https://www.rozwelch.com",
+      "facebook_url": "https://www.facebook.com/rozwelch5022/",
+      "instagram_url": "https://www.instagram.com/roz4clerk/"
+    }
+  },
+  {
+    "id": "jefferson-county-clerk::David Yates",
+    "name": "David Yates",
+    "office": "County Clerk",
+    "level": "county",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/davidyates3",
+      "website_url": "https://www.voteyates.com",
+      "facebook_url": "https://www.facebook.com/electdavidyates",
+      "instagram_url": "https://www.instagram.com/davidyatesky37/"
+    }
+  },
+  {
+    "id": "jefferson-county-sheriff::Richard Breen",
+    "name": "Richard Breen",
+    "office": "County Sheriff",
+    "level": "county",
+    "links": {
+      "website_url": "https://www.breenforsheriff.org"
+    }
+  },
+  {
+    "id": "jefferson-county-sheriff::Steve Healey",
+    "name": "Steve Healey",
+    "office": "County Sheriff",
+    "level": "county",
+    "links": {
+      "website_url": "https://www.healeyforsheriff.com",
+      "facebook_url": "https://www.facebook.com/healeyforsheriff",
+      "twitter_url": "https://x.com/SteveHealeyKY",
+      "instagram_url": "https://www.instagram.com/healeyforsheriff/"
+    }
+  },
+  {
+    "id": "jefferson-county-sheriff::Stephen Yancey",
+    "name": "Stephen Yancey",
+    "office": "County Sheriff",
+    "level": "county",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/stephen-yancey-for-sheriff",
+      "website_url": "https://yanceyforsheriff.com",
+      "facebook_url": "https://www.facebook.com/p/Stephen-L-Yancey-for-Sheriff-100077841107208/",
+      "instagram_url": "https://www.instagram.com/stephenlyancey/"
+    }
+  },
+  {
+    "id": "jefferson-commissioner-a::Joyce Cooper",
+    "name": "Joyce Cooper",
+    "office": "County Commissioner (A District)",
+    "level": "county",
+    "links": {}
+  },
+  {
+    "id": "jefferson-coroner::Jo-Ann Farmer",
+    "name": "Jo-Ann Farmer",
+    "office": "County Coroner",
+    "level": "county",
+    "links": {}
+  },
+  {
+    "id": "jefferson-jop-01::Mera Kathryn Corlett",
+    "name": "Mera Kathryn Corlett",
+    "office": "Justice of the Peace D1",
+    "level": "county",
+    "links": {
+      "website_url": "https://www.meracorlett.com",
+      "facebook_url": "https://www.facebook.com/JofPMeraKCorlett"
+    }
+  },
+  {
+    "id": "jefferson-jop-02::Gary Fields",
+    "name": "Gary Fields",
+    "office": "Justice of the Peace D2",
+    "level": "county",
+    "links": {}
+  },
+  {
+    "id": "jefferson-constable-01::Christopher James Bayer",
+    "name": "Christopher James Bayer",
+    "office": "Constable D1",
+    "level": "county",
+    "links": {}
+  },
+  {
+    "id": "jefferson-constable-02::Shannon T. Leach",
+    "name": "Shannon T. Leach",
+    "office": "Constable D2",
+    "level": "county",
+    "links": {}
+  },
+  {
+    "id": "jefferson-constable-03::Monica Flowers",
+    "name": "Monica Flowers",
+    "office": "Constable D3",
+    "level": "county",
+    "links": {}
+  },
+  {
+    "id": "louisville-mayor::Craig Greenberg",
+    "name": "Craig Greenberg",
+    "office": "Louisville Metro Mayor",
+    "level": "metro",
+    "links": {
+      "website_url": "https://www.greenbergformayor.com",
+      "facebook_url": "https://www.facebook.com/MayorCraigGreenberg/",
+      "twitter_url": "https://x.com/LouisvilleMayor",
+      "instagram_url": "https://www.instagram.com/mayorcraiggreenberg/"
+    }
+  },
+  {
+    "id": "metro-council-01::Tammy Hawkins",
+    "name": "Tammy Hawkins",
+    "office": "Louisville Metro Council D1",
+    "level": "metro",
+    "links": {
+      "facebook_url": "https://www.facebook.com/CouncilwomanTammyHawkins/"
+    }
+  },
+  {
+    "id": "metro-council-03::Kumar Rashad",
+    "name": "Kumar Rashad",
+    "office": "Louisville Metro Council D3",
+    "level": "metro",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/kumar-rashad-2",
+      "website_url": "https://kumarforthepeople.wixsite.com/district15",
+      "facebook_url": "https://www.facebook.com/KumarforthePeople/"
+    }
+  },
+  {
+    "id": "metro-council-05::Aprile Hearn",
+    "name": "Aprile Hearn",
+    "office": "Louisville Metro Council D5",
+    "level": "metro",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/aprile-hearn-1",
+      "website_url": "https://www.aprilehearn.org",
+      "facebook_url": "https://www.facebook.com/share/17GgixyT2o/",
+      "instagram_url": "https://www.instagram.com/voteforaprilehearn/"
+    }
+  },
+  {
+    "id": "metro-council-07::Paula McCraney",
+    "name": "Paula McCraney",
+    "office": "Louisville Metro Council D7",
+    "level": "metro",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/paula-mccraney-1",
+      "website_url": "https://reelectmccraney.blog",
+      "facebook_url": "https://www.facebook.com/PaulaMcCraneyD7/",
+      "twitter_url": "https://x.com/PaulaMcCraneyD7"
+    }
+  },
+  {
+    "id": "metro-council-11::Melina Hettiaratchi",
+    "name": "Melina Hettiaratchi",
+    "office": "Louisville Metro Council D11",
+    "level": "metro",
+    "links": {
+      "website_url": "https://withmelina.com",
+      "facebook_url": "https://www.facebook.com/kywithmelina",
+      "twitter_url": "https://x.com/educator_esq",
+      "instagram_url": "https://www.instagram.com/kywithmelina/"
+    }
+  },
+  {
+    "id": "metro-council-15::Jennifer Chappell",
+    "name": "Jennifer Chappell",
+    "office": "Louisville Metro Council D15",
+    "level": "metro",
+    "links": {
+      "website_url": "https://jenniferformetrocouncil.com",
+      "facebook_url": "https://www.facebook.com/jenniferformetrocouncil",
+      "twitter_url": "https://twitter.com/chappellfor15",
+      "instagram_url": "https://www.instagram.com/jenniferformetrocouncil/"
+    }
+  },
+  {
+    "id": "metro-council-17::Markus Winkler",
+    "name": "Markus Winkler",
+    "office": "Louisville Metro Council D17",
+    "level": "metro",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/markus-winkler-2026",
+      "website_url": "https://winklerformetrocouncil.com",
+      "facebook_url": "https://www.facebook.com/winklerformetrocouncil/"
+    }
+  },
+  {
+    "id": "metro-council-21::Betsy Ruhe",
+    "name": "Betsy Ruhe",
+    "office": "Louisville Metro Council D21",
+    "level": "metro",
+    "links": {
+      "website_url": "https://www.ruheformetro21.com",
+      "facebook_url": "https://www.facebook.com/BetsyRuhe21/"
+    }
+  },
+  {
+    "id": "metro-council-23::Ainsley Jones",
+    "name": "Ainsley Jones",
+    "office": "Louisville Metro Council D23",
+    "level": "metro",
+    "links": {}
+  }
+];
+let state = {};  // id -> { links: { type: { status, url } } }
+
+const LINK_TYPES = [
+  { key: 'actblue_url',  label: 'ActBlue',   icon: '💙' },
+  { key: 'website_url',  label: 'Website',   icon: '🌐' },
+  { key: 'facebook_url', label: 'Facebook',  icon: '📘' },
+  { key: 'twitter_url',  label: 'X/Twitter', icon: '🐦' },
+  { key: 'instagram_url',label: 'Instagram', icon: '📸' },
+];
+
+const LEVELS = ['federal','state','county','metro'];
+const LEVEL_LABELS = { federal:'Federal', state:'State', county:'County', metro:'Metro Louisville' };
+
+let currentId = null;
+let filteredIds = CANDIDATES.map(c => c.id);
+
+// ─── State management ─────────────────────────────────────────────────────────
+function loadState() {
+  try { state = JSON.parse(localStorage.getItem('jc-verify-state') || '{}'); } catch(e) { state = {}; }
+}
+function saveState() {
+  localStorage.setItem('jc-verify-state', JSON.stringify(state));
+  updateProgress();
+  renderSidebar();
+}
+function ensureCandidate(id) {
+  if (!state[id]) state[id] = { links: {} };
+}
+function setLinkStatus(id, key, status, url) {
+  ensureCandidate(id);
+  state[id].links[key] = { status, url };
+  saveState();
+}
+function addLink(id, key, url) {
+  ensureCandidate(id);
+  state[id].links[key] = { status: 'added', url };
+  saveState();
+  renderMain(id);
+}
+
+// ─── Progress ────────────────────────────────────────────────────────────────
+function getVerifiedCount() {
+  return Object.values(state).reduce((n, s) =>
+    n + Object.values(s.links).filter(l => l.status === 'ok' || l.status === 'bad' || l.status === 'added').length, 0);
+}
+function getTotalLinks() {
+  return CANDIDATES.reduce((n, c) => n + Object.keys(c.links).length, 0);
+}
+function getCandidateBadge(c) {
+  const s = state[c.id];
+  const total = Object.keys(c.links).length;
+  if (total === 0) return { cls: 'badge-nolinks', text: 'no links' };
+  if (!s || Object.keys(s.links).length === 0) return { cls: 'badge-none', text: '0/' + total };
+  const done = Object.values(s.links).filter(l => l.status === 'ok' || l.status === 'bad' || l.status === 'added').length;
+  if (done === total) return { cls: 'badge-done', text: '✓' };
+  return { cls: 'badge-partial', text: done + '/' + total };
+}
+function updateProgress() {
+  const total = getTotalLinks();
+  const done = getVerifiedCount();
+  const pct = total ? (done / total * 100) : 0;
+  document.getElementById('prog-fill').style.width = pct + '%';
+  document.getElementById('progress-text').textContent = done + ' / ' + total + ' verified';
+}
+
+// ─── Sidebar ─────────────────────────────────────────────────────────────────
+function renderSidebar() {
+  const list = document.getElementById('sidebar-list');
+  const query = document.getElementById('search').value.toLowerCase();
+  const visible = CANDIDATES.filter(c =>
+    filteredIds.includes(c.id) &&
+    (c.name.toLowerCase().includes(query) || c.office.toLowerCase().includes(query))
+  );
+
+  let html = '';
+  for (const level of LEVELS) {
+    const group = visible.filter(c => c.level === level);
+    if (!group.length) continue;
+    html += `<div class="level-group">
+      <div class="level-header">${LEVEL_LABELS[level]}</div>`;
+    for (const c of group) {
+      const badge = getCandidateBadge(c);
+      const active = c.id === currentId ? ' active' : '';
+      html += `<div class="sidebar-item${active}" onclick="selectCandidate('${c.id}')">
+        <span class="name">${c.name}</span>
+        <span class="badge ${badge.cls}">${badge.text}</span>
+      </div>`;
+    }
+    html += '</div>';
+  }
+  list.innerHTML = html || '<div style="padding:16px;color:var(--gray);font-size:0.85rem">No results</div>';
+}
+function filterSidebar(q) { renderSidebar(); }
+
+// ─── Main panel ──────────────────────────────────────────────────────────────
+function selectCandidate(id) {
+  currentId = id;
+  renderSidebar();
+  renderMain(id);
+}
+
+function renderMain(id) {
+  const c = CANDIDATES.find(x => x.id === id);
+  if (!c) return;
+  const s = state[id] || { links: {} };
+
+  // Merge candidate's original links + any added links in state
+  const allLinks = { ...c.links };
+  for (const [key, ls] of Object.entries(s.links)) {
+    if (ls.status === 'added') allLinks[key] = ls.url;
+    if (ls.status === 'ok' && ls.url !== c.links[key]) allLinks[key] = ls.url; // corrected
+  }
+
+  const levelCls = 'level-' + c.level;
+  let linksHtml = '';
+
+  if (Object.keys(allLinks).length === 0) {
+    linksHtml = '<p class="no-links">No links found for this candidate.</p>';
+  } else {
+    for (const lt of LINK_TYPES) {
+      let url = allLinks[lt.key];
+      // check if state has override
+      if (s.links[lt.key] && (s.links[lt.key].status === 'ok' || s.links[lt.key].status === 'added')) {
+        url = s.links[lt.key].url;
+      }
+      if (!url) continue;
+
+      const ls = s.links[lt.key] || {};
+      const rowCls = ls.status === 'ok' ? ' verified' : ls.status === 'bad' ? ' rejected' : '';
+      const okActive = ls.status === 'ok' ? ' active' : '';
+      const badActive = ls.status === 'bad' ? ' active' : '';
+
+      linksHtml += `
+      <div class="link-row${rowCls}" id="row-${lt.key}">
+        <div class="link-icon">${lt.icon}</div>
+        <div class="link-body">
+          <div class="link-type">${lt.label}</div>
+          <a class="link-url" href="${url}" target="_blank" rel="noopener">${url}</a>
+          ${ls.status === 'bad' ? `<input class="edit-field" id="edit-${lt.key}" placeholder="Enter correct URL..." value="${ls.correctedUrl || ''}" onchange="updateCorrection('${id}','${lt.key}',this.value)">` : ''}
+        </div>
+        <div class="link-actions">
+          <button class="btn btn-open" onclick="window.open('${url}','_blank')">Open ↗</button>
+          <button class="btn btn-ok${okActive}" onclick="markLink('${id}','${lt.key}','ok','${url}')">✓</button>
+          <button class="btn btn-bad${badActive}" onclick="markLink('${id}','${lt.key}','bad','${url}')">✗</button>
+        </div>
+      </div>`;
+    }
+  }
+
+  // Type dropdown for add-link (only types not already present)
+  const presentTypes = new Set(Object.keys(allLinks));
+  const addOptions = LINK_TYPES.filter(lt => !presentTypes.has(lt.key))
+    .map(lt => `<option value="${lt.key}">${lt.label}</option>`).join('');
+
+  const idx = CANDIDATES.findIndex(x => x.id === id);
+
+  document.getElementById('main').innerHTML = `
+  <div class="candidate-card">
+    <div class="card-header">
+      <h2>${c.name}</h2>
+      <div class="office">${c.office}</div>
+      <span class="level-badge ${levelCls}">${LEVEL_LABELS[c.level]}</span>
+    </div>
+    <div class="links-section">
+      <h3>Found Links</h3>
+      ${linksHtml}
+    </div>
+    ${addOptions ? `
+    <div class="add-link-section">
+      <h3>Add Missing Link</h3>
+      <div class="add-link-row">
+        <select id="add-type">${addOptions}</select>
+        <input id="add-url" type="url" placeholder="https://...">
+        <button class="btn-add" onclick="submitAddLink('${id}')">Add</button>
+      </div>
+    </div>` : ''}
+    <div class="nav-row">
+      <button class="btn-nav" onclick="navigate(-1)" ${idx === 0 ? 'disabled' : ''}>← Previous</button>
+      <button class="btn-nav" onclick="navigate(1)" ${idx === CANDIDATES.length-1 ? 'disabled' : ''}>Next →</button>
+    </div>
+  </div>`;
+}
+
+function markLink(id, key, status, url) {
+  const existing = (state[id] && state[id].links[key]) || {};
+  // Toggle off if clicking same button again
+  if (existing.status === status) {
+    ensureCandidate(id);
+    delete state[id].links[key];
+  } else {
+    setLinkStatus(id, key, status, url);
+  }
+  renderMain(id);
+}
+
+function updateCorrection(id, key, url) {
+  ensureCandidate(id);
+  if (state[id].links[key]) state[id].links[key].correctedUrl = url;
+  saveState();
+}
+
+function submitAddLink(id) {
+  const key = document.getElementById('add-type').value;
+  const url = document.getElementById('add-url').value.trim();
+  if (!url) return;
+  addLink(id, key, url);
+}
+
+function navigate(dir) {
+  const idx = CANDIDATES.findIndex(x => x.id === currentId);
+  const next = CANDIDATES[idx + dir];
+  if (next) selectCandidate(next.id);
+}
+
+// ─── Export ──────────────────────────────────────────────────────────────────
+function exportJSON() {
+  // Build enriched output: merge original links with verified state
+  const output = CANDIDATES.map(c => {
+    const s = state[c.id] || { links: {} };
+    const mergedLinks = { ...c.links };
+
+    for (const [key, ls] of Object.entries(s.links)) {
+      if (ls.status === 'bad') {
+        if (ls.correctedUrl) mergedLinks[key] = ls.correctedUrl;
+        else delete mergedLinks[key];
+      } else if (ls.status === 'added') {
+        mergedLinks[key] = ls.url;
+      } else if (ls.status === 'ok' && ls.url) {
+        mergedLinks[key] = ls.url;
+      }
+    }
+
+    return {
+      id: c.id, name: c.name, office: c.office, level: c.level,
+      links: mergedLinks,
+      verification: s.links
+    };
+  });
+
+  const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'verified_links.json';
+  a.click();
+}
+
+// ─── Init ────────────────────────────────────────────────────────────────────
+loadState();
+renderSidebar();
+updateProgress();
+</script>
+</body>
+</html>
