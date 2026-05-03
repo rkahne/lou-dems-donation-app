@@ -1,0 +1,773 @@
+{
+  "metadata": {
+    "description": "Jefferson County, KY Democratic candidates for 2026 elections",
+    "sources": [
+      "Jefferson County Clerk 2026 Candidate Filings PDF (revised 5/1/2026)",
+      "Kentucky Secretary of State Candidate Filings (web.sos.ky.gov)",
+      "Kentucky Democratic Party 2026 Primary Guide (primary.kydemocrats.org)",
+      "Louisville Democratic Party endorsements (github.com/rkahne/sample-ballot-2026)"
+    ],
+    "last_updated": "2026-05-02",
+    "primary_date": "2026-05-19",
+    "general_election_date": "2026-11-03",
+    "notes": "App goes live after primary. The 'general_election_candidate' field is null until the primary resolves. For uncontested primaries (single Democratic candidate), that candidate is the de facto general election candidate. For nonpartisan races, 'ldp_endorsed' marks Louisville Democratic Party endorsements."
+  },
+  "races": [
+    {
+      "id": "us-senate-ky",
+      "office": "U.S. Senate",
+      "district": null,
+      "jurisdiction": "Kentucky",
+      "level": "federal",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Joshua Blanton",
+        "Charles Booker",
+        "Logan Forsythe",
+        "Amy McGrath",
+        "Dale Romans",
+        "Pamela Stevenson",
+        "Vincent Thompson"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Open seat (Mitch McConnell retiring). Statewide race; all Jefferson County voters vote in this."
+    },
+    {
+      "id": "us-house-ky03",
+      "office": "U.S. House of Representatives",
+      "district": 3,
+      "jurisdiction": "Kentucky",
+      "level": "federal",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Morgan McGarvey"
+      ],
+      "general_election_candidate": "Morgan McGarvey",
+      "donate_url": null,
+      "notes": "Incumbent. Covers most of Louisville Metro/Jefferson County. Uncontested Democratic primary."
+    },
+    {
+      "id": "us-house-ky02",
+      "office": "U.S. House of Representatives",
+      "district": 2,
+      "jurisdiction": "Kentucky",
+      "level": "federal",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "William Dakota Compton",
+        "David Hatfield",
+        "Hank Linderman",
+        "Megan Wingfield"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Primarily a rural district; some western Jefferson County precincts may fall in this district. Verify geographic coverage before including in app."
+    },
+    {
+      "id": "ky-senate-06",
+      "office": "Kentucky State Senate",
+      "district": 6,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Christian Furman",
+        "Chaz Stoess"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Covers northern Jefferson County (including Prospect) and Oldham County. Incumbent Republican Lindsey Tichenor. Contested Democratic primary."
+    },
+    {
+      "id": "ky-senate-35",
+      "office": "Kentucky State Senate",
+      "district": 35,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Keturah Herron"
+      ],
+      "general_election_candidate": "Keturah Herron",
+      "donate_url": null,
+      "notes": "Jefferson County district. Incumbent. Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-senate-36",
+      "office": "Kentucky State Senate",
+      "district": 36,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Sarah Cole McIntosh",
+        "Luke Whitehead"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "East Louisville district. Contested Democratic primary; winner faces incumbent Republican Julie Raque Adams in general."
+    },
+    {
+      "id": "ky-senate-37",
+      "office": "Kentucky State Senate",
+      "district": 37,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Gary Clemons"
+      ],
+      "general_election_candidate": "Gary Clemons",
+      "donate_url": null,
+      "notes": "Jefferson County district. Clemons won the special election December 16, 2025 to fill seat vacated when David Yates became County Clerk. Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-senate-26",
+      "office": "Kentucky State Senate",
+      "district": 26,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Karen Berg"
+      ],
+      "general_election_candidate": "Karen Berg",
+      "donate_url": null,
+      "notes": "Incumbent. District covers parts of Jefferson County and all of Oldham County. Uncontested Democratic primary (canceled — Berg advanced without appearing on ballot)."
+    },
+    {
+      "id": "ky-house-28",
+      "office": "Kentucky State House",
+      "district": 28,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Almaria Baker"
+      ],
+      "general_election_candidate": "Almaria Baker",
+      "donate_url": null,
+      "notes": "Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-29",
+      "office": "Kentucky State House",
+      "district": 29,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Cassie Blausey"
+      ],
+      "general_election_candidate": "Cassie Blausey",
+      "donate_url": null,
+      "notes": "TODO: Verify district 29 falls within Jefferson County boundaries. Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-30",
+      "office": "Kentucky State House",
+      "district": 30,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Daniel Grossberg",
+        "Cassie Lyles",
+        "Max Morley",
+        "Mitra Subedi"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Grossberg is the incumbent facing three primary challengers."
+    },
+    {
+      "id": "ky-house-31",
+      "office": "Kentucky State House",
+      "district": 31,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Tim Hall"
+      ],
+      "general_election_candidate": "Tim Hall",
+      "donate_url": null,
+      "notes": "Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-32",
+      "office": "Kentucky State House",
+      "district": 32,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Tina Bojanowski"
+      ],
+      "general_election_candidate": "Tina Bojanowski",
+      "donate_url": null,
+      "notes": "Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-33",
+      "office": "Kentucky State House",
+      "district": 33,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Jennifer Hardin",
+        "Tarah Combs LeBlanc"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Contested Democratic primary."
+    },
+    {
+      "id": "ky-house-34",
+      "office": "Kentucky State House",
+      "district": 34,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Sarah Stalker"
+      ],
+      "general_election_candidate": "Sarah Stalker",
+      "donate_url": null,
+      "notes": "Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-35",
+      "office": "Kentucky State House",
+      "district": 35,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Lisa Willner"
+      ],
+      "general_election_candidate": "Lisa Willner",
+      "donate_url": null,
+      "notes": "Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-36",
+      "office": "Kentucky State House",
+      "district": 36,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "William \"Woody\" Zorn"
+      ],
+      "general_election_candidate": "William \"Woody\" Zorn",
+      "donate_url": null,
+      "notes": "Part of Jefferson County. Incumbent Republican John Hodgson. Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-38",
+      "office": "Kentucky State House",
+      "district": 38,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Rachel Roarx"
+      ],
+      "general_election_candidate": "Rachel Roarx",
+      "donate_url": null,
+      "notes": "Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-40",
+      "office": "Kentucky State House",
+      "district": 40,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Patrick Bryant Dunegan",
+        "Nima Kulkarni"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Contested Democratic primary."
+    },
+    {
+      "id": "ky-house-41",
+      "office": "Kentucky State House",
+      "district": 41,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Mary Lou Marzian"
+      ],
+      "general_election_candidate": "Mary Lou Marzian",
+      "donate_url": null,
+      "notes": "Incumbent. Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-42",
+      "office": "Kentucky State House",
+      "district": 42,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Joshua Watkins"
+      ],
+      "general_election_candidate": "Joshua Watkins",
+      "donate_url": null,
+      "notes": "Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-43",
+      "office": "Kentucky State House",
+      "district": 43,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Robert LeVertis Bell",
+        "Joi McAtee"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Contested Democratic primary."
+    },
+    {
+      "id": "ky-house-44",
+      "office": "Kentucky State House",
+      "district": 44,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Beverly Chester-Burton",
+        "Jesten S. Slaw",
+        "Kenya Wade"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Contested Democratic primary."
+    },
+    {
+      "id": "ky-house-46",
+      "office": "Kentucky State House",
+      "district": 46,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Al Gentry"
+      ],
+      "general_election_candidate": "Al Gentry",
+      "donate_url": null,
+      "notes": "Uncontested Democratic primary."
+    },
+    {
+      "id": "ky-house-48",
+      "office": "Kentucky State House",
+      "district": 48,
+      "jurisdiction": "Kentucky",
+      "level": "state",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Nathan Bellows",
+        "Suhas Kulkarni"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Contested Democratic primary."
+    },
+    {
+      "id": "jefferson-pva",
+      "office": "Property Valuation Administrator (PVA)",
+      "district": null,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Colleen Younger"
+      ],
+      "general_election_candidate": "Colleen Younger",
+      "donate_url": null,
+      "notes": "No Republican filed. Uncontested Democratic primary."
+    },
+    {
+      "id": "jefferson-judge-executive",
+      "office": "County Judge Executive",
+      "district": null,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Queenie Averette"
+      ],
+      "general_election_candidate": "Queenie Averette",
+      "donate_url": null,
+      "notes": "No Republican filed. Uncontested Democratic primary."
+    },
+    {
+      "id": "jefferson-county-attorney",
+      "office": "County Attorney",
+      "district": null,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Sarah Martin",
+        "Karl Price"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "No Republican filed. Contested Democratic primary."
+    },
+    {
+      "id": "jefferson-county-clerk",
+      "office": "County Clerk",
+      "district": null,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Rosalind \"Roz\" Welch",
+        "David Yates"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "No Republican filed. Contested Democratic primary. David Yates previously served as KY State Senator (District 37) before being appointed County Clerk; he resigned to run in this primary."
+    },
+    {
+      "id": "jefferson-county-sheriff",
+      "office": "County Sheriff",
+      "district": null,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Richard Breen",
+        "Steve Healey",
+        "Stephen Yancey"
+      ],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "One Republican filed (Alexander William Marson). Contested Democratic primary."
+    },
+    {
+      "id": "jefferson-commissioner-a",
+      "office": "County Commissioner (A District)",
+      "district": null,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Joyce Cooper"
+      ],
+      "general_election_candidate": "Joyce Cooper",
+      "donate_url": null,
+      "notes": "One Republican filed (Sarah Provancher). Uncontested Democratic primary."
+    },
+    {
+      "id": "jefferson-coroner",
+      "office": "County Coroner",
+      "district": null,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Jo-Ann Farmer"
+      ],
+      "general_election_candidate": "Jo-Ann Farmer",
+      "donate_url": null,
+      "notes": "No Republican filed. Uncontested Democratic primary."
+    },
+    {
+      "id": "jefferson-jop-01",
+      "office": "Justice of the Peace",
+      "district": 1,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Mera Kathryn Corlett"
+      ],
+      "general_election_candidate": "Mera Kathryn Corlett",
+      "donate_url": null,
+      "notes": "No Republican filed. Uncontested Democratic primary."
+    },
+    {
+      "id": "jefferson-jop-02",
+      "office": "Justice of the Peace",
+      "district": 2,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Gary Fields"
+      ],
+      "general_election_candidate": "Gary Fields",
+      "donate_url": null,
+      "notes": "Republican (Skye Powell Grigsby) filed then withdrew 1/22/2026. Uncontested Democratic primary."
+    },
+    {
+      "id": "jefferson-constable-01",
+      "office": "Constable",
+      "district": 1,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Christopher James Bayer"
+      ],
+      "general_election_candidate": "Christopher James Bayer",
+      "donate_url": null,
+      "notes": "One Republican filed (John D. Zehnder). Uncontested Democratic primary."
+    },
+    {
+      "id": "jefferson-constable-02",
+      "office": "Constable",
+      "district": 2,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Shannon T. Leach"
+      ],
+      "general_election_candidate": "Shannon T. Leach",
+      "donate_url": null,
+      "notes": "One Republican filed (Rick Strohmeier). Uncontested Democratic primary."
+    },
+    {
+      "id": "jefferson-constable-03",
+      "office": "Constable",
+      "district": 3,
+      "jurisdiction": "Jefferson County",
+      "level": "county",
+      "race_type": "partisan",
+      "on_primary_ballot": true,
+      "ldp_endorsed": null,
+      "democratic_primary_candidates": [
+        "Monica Flowers"
+      ],
+      "general_election_candidate": "Monica Flowers",
+      "donate_url": null,
+      "notes": "One Republican filed (Ken Pagano). Uncontested Democratic primary."
+    },
+    {
+      "id": "louisville-mayor",
+      "office": "Louisville Metro Mayor",
+      "district": null,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Craig Greenberg",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Craig Greenberg (D). Multiple candidates on ballot including Shameka L. Parrish-Wright (D). Bill Wells withdrew 4/9/2026."
+    },
+    {
+      "id": "metro-council-01",
+      "office": "Louisville Metro Council",
+      "district": 1,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Tammy Hawkins",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Tammy Hawkins."
+    },
+    {
+      "id": "metro-council-03",
+      "office": "Louisville Metro Council",
+      "district": 3,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Kumar Rashad",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Kumar Rashad."
+    },
+    {
+      "id": "metro-council-05",
+      "office": "Louisville Metro Council",
+      "district": 5,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Aprile Hearn",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Aprile Hearn."
+    },
+    {
+      "id": "metro-council-07",
+      "office": "Louisville Metro Council",
+      "district": 7,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Paula McCraney",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Paula McCraney."
+    },
+    {
+      "id": "metro-council-11",
+      "office": "Louisville Metro Council",
+      "district": 11,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Melina Hettiaratchi",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Melina Hettiaratchi."
+    },
+    {
+      "id": "metro-council-15",
+      "office": "Louisville Metro Council",
+      "district": 15,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Jennifer Chappell",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Jennifer Chappell."
+    },
+    {
+      "id": "metro-council-17",
+      "office": "Louisville Metro Council",
+      "district": 17,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Markus Winkler",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Markus Winkler."
+    },
+    {
+      "id": "metro-council-21",
+      "office": "Louisville Metro Council",
+      "district": 21,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Betsy Ruhe",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Betsy Ruhe."
+    },
+    {
+      "id": "metro-council-23",
+      "office": "Louisville Metro Council",
+      "district": 23,
+      "jurisdiction": "Louisville Metro",
+      "level": "metro",
+      "race_type": "nonpartisan",
+      "on_primary_ballot": false,
+      "ldp_endorsed": "Ainsley Jones",
+      "democratic_primary_candidates": [],
+      "general_election_candidate": null,
+      "donate_url": null,
+      "notes": "Nonpartisan race. LDP endorses Ainsley Jones."
+    }
+  ]
+}
