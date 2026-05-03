@@ -993,7 +993,8 @@ function renderSidebar() {
     for (const c of group) {
       const badge = getCandidateBadge(c);
       const active = c.id === currentId ? ' active' : '';
-      html += `<div class="sidebar-item${active}" onclick="selectCandidate('${c.id}')">
+      const safeId = c.id.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+      html += `<div class="sidebar-item${active}" data-cid="${safeId}" onclick="selectCandidate(this.dataset.cid)">
         <span class="name">${c.name}</span>
         <span class="badge ${badge.cls}">${badge.text}</span>
       </div>`;
@@ -1048,12 +1049,12 @@ function renderMain(id) {
         <div class="link-body">
           <div class="link-type">${lt.label}</div>
           <a class="link-url" href="${url}" target="_blank" rel="noopener">${url}</a>
-          ${ls.status === 'bad' ? `<input class="edit-field" id="edit-${lt.key}" placeholder="Enter correct URL..." value="${ls.correctedUrl || ''}" onchange="updateCorrection('${id}','${lt.key}',this.value)">` : ''}
+          ${ls.status === 'bad' ? `<input class="edit-field" id="edit-${lt.key}" placeholder="Enter correct URL..." value="${ls.correctedUrl || ''}" onchange="updateCorrection(currentId,'${lt.key}',this.value)">` : ''}
         </div>
         <div class="link-actions">
-          <button class="btn btn-open" onclick="window.open('${url}','_blank')">Open ↗</button>
-          <button class="btn btn-ok${okActive}" onclick="markLink('${id}','${lt.key}','ok','${url}')">✓</button>
-          <button class="btn btn-bad${badActive}" onclick="markLink('${id}','${lt.key}','bad','${url}')">✗</button>
+          <button class="btn btn-open" data-url="${url.replace(/"/g,'&quot;')}" onclick="window.open(this.dataset.url,'_blank')">Open ↗</button>
+          <button class="btn btn-ok${okActive}" data-url="${url.replace(/"/g,'&quot;')}" onclick="markLink(currentId,'${lt.key}','ok',this.dataset.url)">✓</button>
+          <button class="btn btn-bad${badActive}" data-url="${url.replace(/"/g,'&quot;')}" onclick="markLink(currentId,'${lt.key}','bad',this.dataset.url)">✗</button>
         </div>
       </div>`;
     }
@@ -1083,7 +1084,7 @@ function renderMain(id) {
       <div class="add-link-row">
         <select id="add-type">${addOptions}</select>
         <input id="add-url" type="url" placeholder="https://...">
-        <button class="btn-add" onclick="submitAddLink('${id}')">Add</button>
+        <button class="btn-add" onclick="submitAddLink()">Add</button>
       </div>
     </div>` : ''}
     <div class="nav-row">
@@ -1111,11 +1112,11 @@ function updateCorrection(id, key, url) {
   saveState();
 }
 
-function submitAddLink(id) {
+function submitAddLink() {
   const key = document.getElementById('add-type').value;
   const url = document.getElementById('add-url').value.trim();
   if (!url) return;
-  addLink(id, key, url);
+  addLink(currentId, key, url);
 }
 
 function navigate(dir) {
