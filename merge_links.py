@@ -74,21 +74,41 @@ links_data = {
   "Ainsley Jones": {"actblue_url": None, "website_url": None, "facebook_url": None, "twitter_url": None, "instagram_url": None},
 }
 
+# Campaign Deputy links (separate pass — added after initial search)
+campaign_deputy_data = {
+  "Max Morley":           "https://donate.campaigndeputy.com/donate/maxforky",
+  "Sarah Stalker":        "https://donate.campaigndeputy.com/sarahstalkerforky",
+  "Nathan Bellows":       "https://donate.campaigndeputy.com/donate/nathanbellowsforky",
+  "Sarah Martin":         "https://donate.campaigndeputy.com/donate/sarahmartin",
+  "Richard Breen":        "https://donate.campaigndeputy.com/donate/breen-for-sheriff",
+  "Steve Healey":         "https://donate.campaigndeputy.com/donate/healeyforsheriff",
+  "Craig Greenberg":      "https://donate.campaigndeputy.com/runwithcraig",
+  "Melina Hettiaratchi":  "https://donate.campaigndeputy.com/donate/withmelina",
+  "Jennifer Chappell":    "https://donate.campaigndeputy.com/electjenniferchappell",
+  "Betsy Ruhe":           "https://donate.campaigndeputy.com/betsyruhe",
+}
+
 with open(r'C:\Users\Robert\Documents\jc-dems-app\candidates.json') as f:
     data = json.load(f)
 
+EMPTY = {"actblue_url": None, "campaign_deputy_url": None, "website_url": None, "facebook_url": None, "twitter_url": None, "instagram_url": None}
+
 for race in data['races']:
     race['candidate_links'] = {}
-    for name in race.get('democratic_primary_candidates', []):
-        race['candidate_links'][name] = links_data.get(name, {"actblue_url": None, "website_url": None, "facebook_url": None, "twitter_url": None, "instagram_url": None})
+    names = race.get('democratic_primary_candidates', [])
     endorsed = race.get('ldp_endorsed')
     if endorsed:
-        race['candidate_links'][endorsed] = links_data.get(endorsed, {"actblue_url": None, "website_url": None, "facebook_url": None, "twitter_url": None, "instagram_url": None})
+        names = names + [endorsed]
+    for name in names:
+        entry = {**EMPTY, **links_data.get(name, {})}
+        entry['campaign_deputy_url'] = campaign_deputy_data.get(name)
+        race['candidate_links'][name] = entry
 
 with open(r'C:\Users\Robert\Documents\jc-dems-app\candidates.json', 'w') as f:
     json.dump(data, f, indent=2)
 
 total = sum(len(r['candidate_links']) for r in data['races'])
 has_actblue = sum(1 for r in data['races'] for lnks in r['candidate_links'].values() if lnks.get('actblue_url'))
+has_cd = sum(1 for r in data['races'] for lnks in r['candidate_links'].values() if lnks.get('campaign_deputy_url'))
 has_any = sum(1 for r in data['races'] for lnks in r['candidate_links'].values() if any(lnks.values()))
-print(f"Total candidates: {total}, with ActBlue: {has_actblue}, with any link: {has_any}")
+print(f"Total: {total}, ActBlue: {has_actblue}, Campaign Deputy: {has_cd}, any link: {has_any}")

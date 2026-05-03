@@ -143,11 +143,12 @@ const CANDIDATES = {candidates_json};
 let state = {{}};  // id -> {{ links: {{ type: {{ status, url }} }} }}
 
 const LINK_TYPES = [
-  {{ key: 'actblue_url',  label: 'ActBlue',   icon: '💙' }},
-  {{ key: 'website_url',  label: 'Website',   icon: '🌐' }},
-  {{ key: 'facebook_url', label: 'Facebook',  icon: '📘' }},
-  {{ key: 'twitter_url',  label: 'X/Twitter', icon: '🐦' }},
-  {{ key: 'instagram_url',label: 'Instagram', icon: '📸' }},
+  {{ key: 'actblue_url',         label: 'ActBlue',         icon: '💙' }},
+  {{ key: 'campaign_deputy_url', label: 'Campaign Deputy', icon: '🟦' }},
+  {{ key: 'website_url',         label: 'Website',         icon: '🌐' }},
+  {{ key: 'facebook_url',        label: 'Facebook',        icon: '📘' }},
+  {{ key: 'twitter_url',         label: 'X/Twitter',       icon: '🐦' }},
+  {{ key: 'instagram_url',       label: 'Instagram',       icon: '📸' }},
 ];
 
 const LEVELS = ['federal','state','county','metro'];

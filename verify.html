@@ -397,6 +397,7 @@ const CANDIDATES = [
     "office": "Kentucky State House D30",
     "level": "state",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/maxforky",
       "website_url": "https://www.maxforky.com/",
       "facebook_url": "https://www.facebook.com/profile.php?id=61569505973325",
       "twitter_url": "https://x.com/maxwellmorley",
@@ -466,6 +467,7 @@ const CANDIDATES = [
     "office": "Kentucky State House D34",
     "level": "state",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/sarahstalkerforky",
       "website_url": "https://www.sarahforky.com/",
       "facebook_url": "https://www.facebook.com/SarahStalkerforKY",
       "twitter_url": "https://x.com/sarahforky",
@@ -624,6 +626,7 @@ const CANDIDATES = [
     "office": "Kentucky State House D48",
     "level": "state",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/nathanbellowsforky",
       "website_url": "https://nathanbellowsforky.com/",
       "facebook_url": "https://www.facebook.com/nathanbellowsforky/",
       "instagram_url": "https://www.instagram.com/nathanbellowsforky/"
@@ -663,6 +666,7 @@ const CANDIDATES = [
     "office": "County Attorney",
     "level": "county",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/sarahmartin",
       "website_url": "https://votesarahmartin.com",
       "facebook_url": "https://www.facebook.com/votesarahmartin",
       "twitter_url": "https://x.com/votesarahmartin",
@@ -711,6 +715,7 @@ const CANDIDATES = [
     "office": "County Sheriff",
     "level": "county",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/breen-for-sheriff",
       "website_url": "https://www.breenforsheriff.org"
     }
   },
@@ -720,6 +725,7 @@ const CANDIDATES = [
     "office": "County Sheriff",
     "level": "county",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/healeyforsheriff",
       "website_url": "https://www.healeyforsheriff.com",
       "facebook_url": "https://www.facebook.com/healeyforsheriff",
       "twitter_url": "https://x.com/SteveHealeyKY",
@@ -796,6 +802,7 @@ const CANDIDATES = [
     "office": "Louisville Metro Mayor",
     "level": "metro",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/runwithcraig",
       "website_url": "https://www.greenbergformayor.com",
       "facebook_url": "https://www.facebook.com/MayorCraigGreenberg/",
       "twitter_url": "https://x.com/LouisvilleMayor",
@@ -852,6 +859,7 @@ const CANDIDATES = [
     "office": "Louisville Metro Council D11",
     "level": "metro",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/withmelina",
       "website_url": "https://withmelina.com",
       "facebook_url": "https://www.facebook.com/kywithmelina",
       "twitter_url": "https://x.com/educator_esq",
@@ -864,6 +872,7 @@ const CANDIDATES = [
     "office": "Louisville Metro Council D15",
     "level": "metro",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/electjenniferchappell",
       "website_url": "https://jenniferformetrocouncil.com",
       "facebook_url": "https://www.facebook.com/jenniferformetrocouncil",
       "twitter_url": "https://twitter.com/chappellfor15",
@@ -887,6 +896,7 @@ const CANDIDATES = [
     "office": "Louisville Metro Council D21",
     "level": "metro",
     "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/betsyruhe",
       "website_url": "https://www.ruheformetro21.com",
       "facebook_url": "https://www.facebook.com/BetsyRuhe21/"
     }
@@ -902,11 +912,12 @@ const CANDIDATES = [
 let state = {};  // id -> { links: { type: { status, url } } }
 
 const LINK_TYPES = [
-  { key: 'actblue_url',  label: 'ActBlue',   icon: '💙' },
-  { key: 'website_url',  label: 'Website',   icon: '🌐' },
-  { key: 'facebook_url', label: 'Facebook',  icon: '📘' },
-  { key: 'twitter_url',  label: 'X/Twitter', icon: '🐦' },
-  { key: 'instagram_url',label: 'Instagram', icon: '📸' },
+  { key: 'actblue_url',         label: 'ActBlue',         icon: '💙' },
+  { key: 'campaign_deputy_url', label: 'Campaign Deputy', icon: '🟦' },
+  { key: 'website_url',         label: 'Website',         icon: '🌐' },
+  { key: 'facebook_url',        label: 'Facebook',        icon: '📘' },
+  { key: 'twitter_url',         label: 'X/Twitter',       icon: '🐦' },
+  { key: 'instagram_url',       label: 'Instagram',       icon: '📸' },
 ];
 
 const LEVELS = ['federal','state','county','metro'];
