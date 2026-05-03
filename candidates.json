@@ -382,23 +382,14 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Daniel Grossberg",
         "Cassie Lyles",
         "Max Morley",
         "Mitra Subedi"
       ],
       "general_election_candidate": null,
       "donate_url": null,
-      "notes": "Grossberg is the incumbent facing three primary challengers.",
+      "notes": "Three-way primary for open seat (Grossberg disavowed by party, excluded).",
       "candidate_links": {
-        "Daniel Grossberg": {
-          "actblue_url": "https://secure.actblue.com/donate/repgrossberg",
-          "campaign_deputy_url": null,
-          "website_url": "https://www.grossberg4ky.com/",
-          "facebook_url": "https://www.facebook.com/grossberg4ky",
-          "twitter_url": "https://twitter.com/grossberg4ky",
-          "instagram_url": "https://www.instagram.com/grossberg4ky/"
-        },
         "Cassie Lyles": {
           "actblue_url": "https://secure.actblue.com/donate/cassie-lyles-1",
           "campaign_deputy_url": null,
