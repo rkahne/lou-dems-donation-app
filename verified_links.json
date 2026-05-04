@@ -1,0 +1,1821 @@
+[
+  {
+    "id": "us-senate-ky::Joshua Blanton",
+    "name": "Joshua Blanton",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "website_url": "https://joshuablantonsr.com/",
+      "twitter_url": "https://x.com/JoshuaBlantonSr"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://joshuablantonsr.com/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/JoshuaBlantonSr"
+      }
+    }
+  },
+  {
+    "id": "us-senate-ky::Charles Booker",
+    "name": "Charles Booker",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/charles-booker-3",
+      "website_url": "https://charlesbooker.org/",
+      "facebook_url": "https://www.facebook.com/Booker4KY/",
+      "twitter_url": "https://twitter.com/Booker4KY",
+      "instagram_url": "https://www.instagram.com/booker4ky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/charles-booker-3"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://charlesbooker.org/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/Booker4KY/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://twitter.com/Booker4KY"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/booker4ky/"
+      }
+    }
+  },
+  {
+    "id": "us-senate-ky::Logan Forsythe",
+    "name": "Logan Forsythe",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/logan-forsythe-1",
+      "website_url": "https://loganforsythe.com/",
+      "facebook_url": "https://www.facebook.com/loganforsytheky",
+      "twitter_url": "https://x.com/loganforky",
+      "instagram_url": "https://www.instagram.com/loganforsytheky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/logan-forsythe-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://loganforsythe.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/loganforsytheky"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/loganforky"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/loganforsytheky/"
+      }
+    }
+  },
+  {
+    "id": "us-senate-ky::Amy McGrath",
+    "name": "Amy McGrath",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/amy-mcgrath-2",
+      "website_url": "https://amymcgrath.com/",
+      "facebook_url": "https://www.facebook.com/AmyMcGrathKY",
+      "twitter_url": "https://twitter.com/AmyMcGrathKY",
+      "instagram_url": "https://www.instagram.com/amymcgrathky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/amy-mcgrath-2"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://amymcgrath.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/AmyMcGrathKY"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://twitter.com/AmyMcGrathKY"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/amymcgrathky/"
+      }
+    }
+  },
+  {
+    "id": "us-senate-ky::Dale Romans",
+    "name": "Dale Romans",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/dale-romans-1",
+      "website_url": "https://daleromans.com/",
+      "facebook_url": "https://www.facebook.com/daleforkentucky",
+      "twitter_url": "https://x.com/DaleRomansKY",
+      "instagram_url": "https://www.instagram.com/daleromans/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/dale-romans-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://daleromans.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/daleforkentucky"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/DaleRomansKY"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/daleromans/"
+      }
+    }
+  },
+  {
+    "id": "us-senate-ky::Pamela Stevenson",
+    "name": "Pamela Stevenson",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/pamela-stevenson-1",
+      "website_url": "https://www.stevensonforsenate.com/",
+      "facebook_url": "https://www.facebook.com/ColPamStevenson",
+      "twitter_url": "https://x.com/ColPamStevenson",
+      "instagram_url": "https://www.instagram.com/colpamstevenson"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/pamela-stevenson-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.stevensonforsenate.com/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/ColPamStevenson"
+      },
+      "facebook_url": {
+        "status": "bad",
+        "url": "https://www.facebook.com/PamForAG/",
+        "correctedUrl": "https://www.facebook.com/ColPamStevenson"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/colpamstevenson"
+      }
+    }
+  },
+  {
+    "id": "us-senate-ky::Vincent Thompson",
+    "name": "Vincent Thompson",
+    "office": "U.S. Senate",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/vincentthompsoncampaignfund",
+      "facebook_url": "https://www.facebook.com/vincentanthonythompson2026ussenate/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/vincentthompsoncampaignfund"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/vincentanthonythompson2026ussenate/"
+      }
+    }
+  },
+  {
+    "id": "us-house-ky03::Morgan McGarvey",
+    "name": "Morgan McGarvey",
+    "office": "U.S. House of Representatives D3",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/bs_mcg_web_fr",
+      "website_url": "https://www.morganmcgarvey.com/",
+      "facebook_url": "https://www.facebook.com/MorganMcGarveyForCongress",
+      "twitter_url": "https://twitter.com/MorganMcGarvey",
+      "instagram_url": "https://www.instagram.com/morgan_mcgarvey/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/bs_mcg_web_fr"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.morganmcgarvey.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/MorganMcGarveyForCongress"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://twitter.com/MorganMcGarvey"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/morgan_mcgarvey/"
+      }
+    }
+  },
+  {
+    "id": "us-house-ky02::William Dakota Compton",
+    "name": "William Dakota Compton",
+    "office": "U.S. House of Representatives D2",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/compton4congress2026",
+      "website_url": "https://www.williamcompton.com",
+      "facebook_url": "https://www.facebook.com/Compton4KY2024/",
+      "instagram_url": "https://www.instagram.com/compton4ky2026/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/compton4congress2026"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.williamcompton.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/Compton4KY2024/"
+      },
+      "twitter_url": {
+        "status": "bad",
+        "url": "https://x.com/compton4ky2022"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/compton4ky2026/"
+      }
+    }
+  },
+  {
+    "id": "us-house-ky02::David Hatfield",
+    "name": "David Hatfield",
+    "office": "U.S. House of Representatives D2",
+    "level": "federal",
+    "links": {},
+    "verification": {}
+  },
+  {
+    "id": "us-house-ky02::Hank Linderman",
+    "name": "Hank Linderman",
+    "office": "U.S. House of Representatives D2",
+    "level": "federal",
+    "links": {
+      "website_url": "https://www.hank4ky.com/",
+      "facebook_url": "https://www.facebook.com/hank4ky/",
+      "twitter_url": "https://twitter.com/hank4ky"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.hank4ky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/hank4ky/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://twitter.com/hank4ky"
+      }
+    }
+  },
+  {
+    "id": "us-house-ky02::Megan Wingfield",
+    "name": "Megan Wingfield",
+    "office": "U.S. House of Representatives D2",
+    "level": "federal",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/megan-wingfield-1",
+      "website_url": "https://meganwingfieldforcongress.com/",
+      "facebook_url": "https://www.facebook.com/megan.wingfield.for.congress/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/megan-wingfield-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://meganwingfieldforcongress.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/megan.wingfield.for.congress/"
+      },
+      "twitter_url": {
+        "status": "bad",
+        "url": "https://twitter.com/megan_wingfield"
+      },
+      "instagram_url": {
+        "status": "bad",
+        "url": "https://www.instagram.com/megannwingfieldd/"
+      }
+    }
+  },
+  {
+    "id": "ky-senate-06::Christian Furman",
+    "name": "Christian Furman",
+    "office": "Kentucky State Senate D6",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/christian-furman",
+      "website_url": "https://christianforky.com/",
+      "facebook_url": "https://www.facebook.com/christianforky",
+      "twitter_url": "https://x.com/christianforky",
+      "instagram_url": "https://www.instagram.com/christianforky"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/christian-furman"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://christianforky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/christianforky"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/christianforky"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/christianforky"
+      }
+    }
+  },
+  {
+    "id": "ky-senate-06::Chaz Stoess",
+    "name": "Chaz Stoess",
+    "office": "Kentucky State Senate D6",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/chazstoess",
+      "website_url": "https://chazforky.com/",
+      "facebook_url": "https://www.facebook.com/chaz4ky",
+      "instagram_url": "https://www.instagram.com/chazforky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/chazstoess"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://chazforky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/chaz4ky"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/chazforky/"
+      }
+    }
+  },
+  {
+    "id": "ky-senate-35::Keturah Herron",
+    "name": "Keturah Herron",
+    "office": "Kentucky State Senate D35",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/keturah-herron-for-state-senate",
+      "website_url": "https://www.keturahherron.com/",
+      "facebook_url": "https://www.facebook.com/KeturahHerronforKYSenate/",
+      "twitter_url": "https://twitter.com/KeturahHerron",
+      "instagram_url": "https://www.instagram.com/senator_herron/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/keturah-herron-for-state-senate"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.keturahherron.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/KeturahHerronforKYSenate/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://twitter.com/KeturahHerron"
+      },
+      "instagram_url": {
+        "status": "bad",
+        "url": "https://www.instagram.com/keturah.herron/",
+        "correctedUrl": "https://www.instagram.com/senator_herron/"
+      }
+    }
+  },
+  {
+    "id": "ky-senate-36::Sarah Cole McIntosh",
+    "name": "Sarah Cole McIntosh",
+    "office": "Kentucky State Senate D36",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/scm-website",
+      "website_url": "https://www.sarahcolemcintosh.com/",
+      "twitter_url": "https://x.com/SarahColeMcInt1"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/scm-website"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.sarahcolemcintosh.com/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/SarahColeMcInt1"
+      }
+    }
+  },
+  {
+    "id": "ky-senate-36::Luke Whitehead",
+    "name": "Luke Whitehead",
+    "office": "Kentucky State Senate D36",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/luke-whitehead-1",
+      "website_url": "https://whiteheadforsenate.com/",
+      "facebook_url": "https://www.facebook.com/LukeWhitehead24/",
+      "instagram_url": "https://www.instagram.com/luke_whitehead24/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/luke-whitehead-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://whiteheadforsenate.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/LukeWhitehead24/"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/luke_whitehead24/"
+      }
+    }
+  },
+  {
+    "id": "ky-senate-37::Gary Clemons",
+    "name": "Gary Clemons",
+    "office": "Kentucky State Senate D37",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/gary-clemons-1",
+      "website_url": "https://garyclemons.com/",
+      "facebook_url": "https://www.facebook.com/GaryClemonsForSenate37",
+      "instagram_url": "https://www.instagram.com/garyclemonssenate37/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/gary-clemons-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://garyclemons.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/GaryClemonsForSenate37"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/garyclemonssenate37/"
+      }
+    }
+  },
+  {
+    "id": "ky-senate-26::Karen Berg",
+    "name": "Karen Berg",
+    "office": "Kentucky State Senate D26",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/campaign-for-karen-berg-ky-state-senate-1",
+      "facebook_url": "https://www.facebook.com/StateSenatorKarenBerg/",
+      "twitter_url": "https://twitter.com/karenforky"
+    },
+    "verification": {
+      "website_url": {
+        "status": "bad",
+        "url": "https://karenforkentucky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/StateSenatorKarenBerg/"
+      },
+      "actblue_url": {
+        "status": "bad",
+        "url": "https://secure.actblue.com/donate/kysdcccwebsite",
+        "correctedUrl": "https://secure.actblue.com/donate/campaign-for-karen-berg-ky-state-senate-1"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://twitter.com/karenforky"
+      }
+    }
+  },
+  {
+    "id": "ky-house-28::Almaria Baker",
+    "name": "Almaria Baker",
+    "office": "Kentucky State House D28",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/team-baker-1",
+      "website_url": "https://www.bakerforhouse28.com/",
+      "facebook_url": "https://www.facebook.com/people/Baker-for-State-House-D-28/61556897897015/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/team-baker-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.bakerforhouse28.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/people/Baker-for-State-House-D-28/61556897897015/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-29::Cassie Blausey",
+    "name": "Cassie Blausey",
+    "office": "Kentucky State House D29",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/cassieblausey",
+      "website_url": "https://cassieblausey.com/",
+      "facebook_url": "https://www.facebook.com/cassieblausey",
+      "twitter_url": "https://x.com/cassieblausey",
+      "instagram_url": "https://www.instagram.com/cassieblausey/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/cassieblausey"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://cassieblausey.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/cassieblausey"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/cassieblausey"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/cassieblausey/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-30::Cassie Lyles",
+    "name": "Cassie Lyles",
+    "office": "Kentucky State House D30",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/cassie-lyles-1",
+      "website_url": "https://cassielyles.com/",
+      "facebook_url": "https://www.facebook.com/profile.php?id=61575024633957",
+      "instagram_url": "https://www.instagram.com/cassielyles4kyhouse30/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/cassie-lyles-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://cassielyles.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/profile.php?id=61575024633957"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/cassielyles4kyhouse30/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-30::Max Morley",
+    "name": "Max Morley",
+    "office": "Kentucky State House D30",
+    "level": "state",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/maxforky",
+      "website_url": "https://www.maxforky.com/",
+      "facebook_url": "https://www.facebook.com/profile.php?id=61569505973325",
+      "twitter_url": "https://x.com/maxwellmorley",
+      "instagram_url": "https://www.instagram.com/maxforky/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.maxforky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/profile.php?id=61569505973325"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/maxwellmorley"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/maxforky/"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/donate/maxforky"
+      }
+    }
+  },
+  {
+    "id": "ky-house-30::Mitra Subedi",
+    "name": "Mitra Subedi",
+    "office": "Kentucky State House D30",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/elect-mitra-subedi-as-state-representative-1",
+      "website_url": "https://www.subedihouse30.com/",
+      "facebook_url": "https://www.facebook.com/p/Mitra-Subedi-61556215592834/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/elect-mitra-subedi-as-state-representative-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.subedihouse30.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/p/Mitra-Subedi-61556215592834/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-31::Tim Hall",
+    "name": "Tim Hall",
+    "office": "Kentucky State House D31",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/tim-hall-1"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/tim-hall-1"
+      }
+    }
+  },
+  {
+    "id": "ky-house-32::Tina Bojanowski",
+    "name": "Tina Bojanowski",
+    "office": "Kentucky State House D32",
+    "level": "state",
+    "links": {
+      "facebook_url": "https://www.facebook.com/tinaforkentucky/",
+      "twitter_url": "https://x.com/tinaforkentucky",
+      "instagram_url": "https://www.instagram.com/tinaforkentucky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "bad",
+        "url": "https://secure.actblue.com/donate/tinaforkentucky"
+      },
+      "website_url": {
+        "status": "bad",
+        "url": "https://www.tinaforkentucky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/tinaforkentucky/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/tinaforkentucky"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/tinaforkentucky/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-33::Jennifer Hardin",
+    "name": "Jennifer Hardin",
+    "office": "Kentucky State House D33",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/jennifer-hardin-1",
+      "website_url": "https://www.hardin4ky.com/",
+      "facebook_url": "https://www.facebook.com/hardin4ky/",
+      "instagram_url": "https://www.instagram.com/hardin4ky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/jennifer-hardin-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.hardin4ky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/hardin4ky/"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/hardin4ky/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-33::Tarah Combs LeBlanc",
+    "name": "Tarah Combs LeBlanc",
+    "office": "Kentucky State House D33",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/tarahforky",
+      "website_url": "https://tarahforky.com/",
+      "facebook_url": "https://www.facebook.com/profile.php?id=61584679924878",
+      "instagram_url": "https://www.instagram.com/tarahforky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/tarahforky"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://tarahforky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/profile.php?id=61584679924878"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/tarahforky/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-34::Sarah Stalker",
+    "name": "Sarah Stalker",
+    "office": "Kentucky State House D34",
+    "level": "state",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/sarahstalkerforky",
+      "website_url": "https://www.sarahforky.com/",
+      "facebook_url": "https://www.facebook.com/SarahStalkerforKY",
+      "instagram_url": "https://www.instagram.com/sarahforky/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.sarahforky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/SarahStalkerforKY"
+      },
+      "twitter_url": {
+        "status": "bad",
+        "url": "https://x.com/sarahforky"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/sarahforky/"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/sarahstalkerforky"
+      }
+    }
+  },
+  {
+    "id": "ky-house-35::Lisa Willner",
+    "name": "Lisa Willner",
+    "office": "Kentucky State House D35",
+    "level": "state",
+    "links": {
+      "website_url": "https://lisawillner.com/",
+      "facebook_url": "https://www.facebook.com/lisaforkyhouse/",
+      "twitter_url": "https://x.com/lgwillner"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://lisawillner.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/lisaforkyhouse/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/lgwillner"
+      }
+    }
+  },
+  {
+    "id": "ky-house-36::William \"Woody\" Zorn",
+    "name": "William \"Woody\" Zorn",
+    "office": "Kentucky State House D36",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/zornky36",
+      "facebook_url": "https://www.facebook.com/Woody4KY/",
+      "instagram_url": "https://www.instagram.com/woody4ky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/zornky36"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/Woody4KY/"
+      },
+      "twitter_url": {
+        "status": "bad",
+        "url": "https://x.com/woodyzorn"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/woody4ky/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-38::Rachel Roarx",
+    "name": "Rachel Roarx",
+    "office": "Kentucky State House D38",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/committee-to-elect-rachel-roarx-1",
+      "website_url": "https://rachelroarx.com/",
+      "facebook_url": "https://www.facebook.com/rachelroarxdistrict38/",
+      "twitter_url": "https://x.com/RachelRoarx",
+      "instagram_url": "https://www.instagram.com/rachelroarxdistrict38/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/committee-to-elect-rachel-roarx-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://rachelroarx.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/rachelroarxdistrict38/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/RachelRoarx"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/rachelroarxdistrict38/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-40::Patrick Bryant Dunegan",
+    "name": "Patrick Bryant Dunegan",
+    "office": "Kentucky State House D40",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/patrick-dunegan-1"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/patrick-dunegan-1"
+      }
+    }
+  },
+  {
+    "id": "ky-house-40::Nima Kulkarni",
+    "name": "Nima Kulkarni",
+    "office": "Kentucky State House D40",
+    "level": "state",
+    "links": {
+      "website_url": "https://www.votenima.com/",
+      "facebook_url": "https://www.facebook.com/StateRepresentativeNimaKulkarni/",
+      "twitter_url": "https://x.com/RepNimaKulkarni",
+      "instagram_url": "https://www.instagram.com/repnimakulkarni/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.votenima.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/StateRepresentativeNimaKulkarni/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/RepNimaKulkarni"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/repnimakulkarni/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-41::Mary Lou Marzian",
+    "name": "Mary Lou Marzian",
+    "office": "Kentucky State House D41",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/state-campaign-fund-for-mary-marzian-1",
+      "facebook_url": "https://www.facebook.com/RepMLMarzian",
+      "twitter_url": "https://x.com/MaryLouMarzian"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/state-campaign-fund-for-mary-marzian-1"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/RepMLMarzian"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/MaryLouMarzian"
+      }
+    }
+  },
+  {
+    "id": "ky-house-42::Joshua Watkins",
+    "name": "Joshua Watkins",
+    "office": "Kentucky State House D42",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/re-elect-watkins-for-42",
+      "website_url": "https://votejoshuawatkins.com/",
+      "facebook_url": "https://www.facebook.com/joshua4kentucky/",
+      "instagram_url": "https://www.instagram.com/joshua4kentucky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/re-elect-watkins-for-42"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://votejoshuawatkins.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/joshua4kentucky/"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/joshua4kentucky/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-43::Robert LeVertis Bell",
+    "name": "Robert LeVertis Bell",
+    "office": "Kentucky State House D43",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/robert-levertis-bell-1",
+      "website_url": "https://bell4ky.com/",
+      "facebook_url": "https://www.facebook.com/bell4ky/",
+      "twitter_url": "https://twitter.com/bell4ky",
+      "instagram_url": "https://www.instagram.com/robertlevertisbell/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/robert-levertis-bell-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://bell4ky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/bell4ky/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://twitter.com/bell4ky"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/robertlevertisbell/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-43::Joi McAtee",
+    "name": "Joi McAtee",
+    "office": "Kentucky State House D43",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/joi-mcatee-1",
+      "website_url": "https://joimcatee.com/",
+      "facebook_url": "https://www.facebook.com/joiforkentucky/",
+      "instagram_url": "https://www.instagram.com/joiforkentucky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/joi-mcatee-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://joimcatee.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/joiforkentucky/"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/joiforkentucky/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-44::Beverly Chester-Burton",
+    "name": "Beverly Chester-Burton",
+    "office": "Kentucky State House D44",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/bcb4ky",
+      "facebook_url": "https://www.facebook.com/bcb4ky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/bcb4ky"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/bcb4ky/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-44::Jesten S. Slaw",
+    "name": "Jesten S. Slaw",
+    "office": "Kentucky State House D44",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/slawforky"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/slawforky"
+      }
+    }
+  },
+  {
+    "id": "ky-house-44::Kenya Wade",
+    "name": "Kenya Wade",
+    "office": "Kentucky State House D44",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/winwithwade.com",
+      "website_url": "https://kenyaforkentucky.com/",
+      "facebook_url": "https://www.facebook.com/kenyaforkentucky/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/winwithwade.com"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://kenyaforkentucky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/kenyaforkentucky/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-46::Al Gentry",
+    "name": "Al Gentry",
+    "office": "Kentucky State House D46",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/al-gentry",
+      "website_url": "https://www.algentryforkentucky.com/",
+      "facebook_url": "https://www.facebook.com/kyalgentry/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/al-gentry"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.algentryforkentucky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/kyalgentry/"
+      }
+    }
+  },
+  {
+    "id": "ky-house-48::Nathan Bellows",
+    "name": "Nathan Bellows",
+    "office": "Kentucky State House D48",
+    "level": "state",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/nathanbellowsforky",
+      "website_url": "https://nathanbellowsforky.com/",
+      "facebook_url": "https://www.facebook.com/nathanbellowsforky/",
+      "instagram_url": "https://www.instagram.com/nathanbellowsforky/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://nathanbellowsforky.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/nathanbellowsforky/"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/nathanbellowsforky/"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/donate/nathanbellowsforky"
+      }
+    }
+  },
+  {
+    "id": "ky-house-48::Suhas Kulkarni",
+    "name": "Suhas Kulkarni",
+    "office": "Kentucky State House D48",
+    "level": "state",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/suhas48",
+      "website_url": "https://suhas48.com/",
+      "facebook_url": "https://www.facebook.com/Suhas48th/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/suhas48"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://suhas48.com/"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/Suhas48th/"
+      }
+    }
+  },
+  {
+    "id": "jefferson-pva::Colleen Younger",
+    "name": "Colleen Younger",
+    "office": "Property Valuation Administrator (PVA)",
+    "level": "county",
+    "links": {
+      "facebook_url": "https://www.facebook.com/ColleenYoungerforPVA/"
+    },
+    "verification": {
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/ColleenYoungerforPVA/"
+      },
+      "website_url": {
+        "status": "bad",
+        "url": "https://youngerforlouisvillepva.org"
+      }
+    }
+  },
+  {
+    "id": "jefferson-judge-executive::Queenie Averette",
+    "name": "Queenie Averette",
+    "office": "County Judge Executive",
+    "level": "county",
+    "links": {},
+    "verification": {}
+  },
+  {
+    "id": "jefferson-county-attorney::Sarah Martin",
+    "name": "Sarah Martin",
+    "office": "County Attorney",
+    "level": "county",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/sarahmartin",
+      "website_url": "https://votesarahmartin.com",
+      "facebook_url": "https://www.facebook.com/votesarahmartin",
+      "twitter_url": "https://x.com/votesarahmartin",
+      "instagram_url": "https://www.instagram.com/votesarahmartin/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://votesarahmartin.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/votesarahmartin"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/votesarahmartin"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/votesarahmartin/"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/donate/sarahmartin"
+      }
+    }
+  },
+  {
+    "id": "jefferson-county-attorney::Karl Price",
+    "name": "Karl Price",
+    "office": "County Attorney",
+    "level": "county",
+    "links": {
+      "website_url": "https://www.votekarlprice.com",
+      "facebook_url": "https://www.facebook.com/votekarlprice",
+      "twitter_url": "https://x.com/kplawlive",
+      "instagram_url": "https://www.instagram.com/votekarlprice/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.votekarlprice.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/votekarlprice"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/kplawlive"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/votekarlprice/"
+      }
+    }
+  },
+  {
+    "id": "jefferson-county-clerk::Rosalind \"Roz\" Welch",
+    "name": "Rosalind \"Roz\" Welch",
+    "office": "County Clerk",
+    "level": "county",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/rosalind--roz--welch-1",
+      "website_url": "https://www.rozwelch.com",
+      "facebook_url": "https://www.facebook.com/rozwelch5022/",
+      "instagram_url": "https://www.instagram.com/roz4clerk/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/rosalind--roz--welch-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.rozwelch.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/rozwelch5022/"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/roz4clerk/"
+      }
+    }
+  },
+  {
+    "id": "jefferson-county-clerk::David Yates",
+    "name": "David Yates",
+    "office": "County Clerk",
+    "level": "county",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/davidyates3",
+      "website_url": "https://www.voteyates.com",
+      "facebook_url": "https://www.facebook.com/electdavidyates"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/davidyates3"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.voteyates.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/electdavidyates"
+      },
+      "instagram_url": {
+        "status": "bad",
+        "url": "https://www.instagram.com/davidyatesky37/"
+      }
+    }
+  },
+  {
+    "id": "jefferson-county-sheriff::Richard Breen",
+    "name": "Richard Breen",
+    "office": "County Sheriff",
+    "level": "county",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/breen-for-sheriff",
+      "website_url": "https://www.breenforsheriff.org"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.breenforsheriff.org"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/donate/breen-for-sheriff"
+      }
+    }
+  },
+  {
+    "id": "jefferson-county-sheriff::Steve Healey",
+    "name": "Steve Healey",
+    "office": "County Sheriff",
+    "level": "county",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/healeyforsheriff",
+      "website_url": "https://www.healeyforsheriff.com",
+      "facebook_url": "https://www.facebook.com/healeyforsheriff",
+      "twitter_url": "https://x.com/SteveHealeyKY",
+      "instagram_url": "https://www.instagram.com/healeyforsheriff/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.healeyforsheriff.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/healeyforsheriff"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/SteveHealeyKY"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/healeyforsheriff/"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/donate/healeyforsheriff"
+      }
+    }
+  },
+  {
+    "id": "jefferson-county-sheriff::Stephen Yancey",
+    "name": "Stephen Yancey",
+    "office": "County Sheriff",
+    "level": "county",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/stephen-yancey-for-sheriff",
+      "website_url": "https://yanceyforsheriff.com",
+      "facebook_url": "https://www.facebook.com/p/Stephen-L-Yancey-for-Sheriff-100077841107208/",
+      "instagram_url": "https://www.instagram.com/stephenlyancey/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/stephen-yancey-for-sheriff"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://yanceyforsheriff.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/p/Stephen-L-Yancey-for-Sheriff-100077841107208/"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/stephenlyancey/"
+      }
+    }
+  },
+  {
+    "id": "jefferson-commissioner-a::Joyce Cooper",
+    "name": "Joyce Cooper",
+    "office": "County Commissioner (A District)",
+    "level": "county",
+    "links": {},
+    "verification": {}
+  },
+  {
+    "id": "jefferson-coroner::Jo-Ann Farmer",
+    "name": "Jo-Ann Farmer",
+    "office": "County Coroner",
+    "level": "county",
+    "links": {},
+    "verification": {}
+  },
+  {
+    "id": "jefferson-jop-01::Mera Kathryn Corlett",
+    "name": "Mera Kathryn Corlett",
+    "office": "Justice of the Peace D1",
+    "level": "county",
+    "links": {
+      "website_url": "https://www.meracorlett.com",
+      "facebook_url": "https://www.facebook.com/JofPMeraKCorlett"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.meracorlett.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/JofPMeraKCorlett"
+      }
+    }
+  },
+  {
+    "id": "jefferson-jop-02::Gary Fields",
+    "name": "Gary Fields",
+    "office": "Justice of the Peace D2",
+    "level": "county",
+    "links": {},
+    "verification": {}
+  },
+  {
+    "id": "jefferson-constable-01::Christopher James Bayer",
+    "name": "Christopher James Bayer",
+    "office": "Constable D1",
+    "level": "county",
+    "links": {},
+    "verification": {}
+  },
+  {
+    "id": "jefferson-constable-02::Shannon T. Leach",
+    "name": "Shannon T. Leach",
+    "office": "Constable D2",
+    "level": "county",
+    "links": {},
+    "verification": {}
+  },
+  {
+    "id": "jefferson-constable-03::Monica Flowers",
+    "name": "Monica Flowers",
+    "office": "Constable D3",
+    "level": "county",
+    "links": {},
+    "verification": {}
+  },
+  {
+    "id": "louisville-mayor::Craig Greenberg",
+    "name": "Craig Greenberg",
+    "office": "Louisville Metro Mayor",
+    "level": "metro",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/runwithcraig",
+      "website_url": "https://www.greenbergformayor.com",
+      "facebook_url": "https://www.facebook.com/MayorCraigGreenberg/",
+      "twitter_url": "https://x.com/LouisvilleMayor",
+      "instagram_url": "https://www.instagram.com/mayorcraiggreenberg/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.greenbergformayor.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/MayorCraigGreenberg/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/LouisvilleMayor"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/mayorcraiggreenberg/"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/runwithcraig"
+      }
+    }
+  },
+  {
+    "id": "metro-council-01::Tammy Hawkins",
+    "name": "Tammy Hawkins",
+    "office": "Louisville Metro Council D1",
+    "level": "metro",
+    "links": {
+      "facebook_url": "https://www.facebook.com/CouncilwomanTammyHawkins/"
+    },
+    "verification": {
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/CouncilwomanTammyHawkins/"
+      }
+    }
+  },
+  {
+    "id": "metro-council-03::Kumar Rashad",
+    "name": "Kumar Rashad",
+    "office": "Louisville Metro Council D3",
+    "level": "metro",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/kumar-rashad-2",
+      "website_url": "https://kumarforthepeople.wixsite.com/district15",
+      "facebook_url": "https://www.facebook.com/KumarforthePeople/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/kumar-rashad-2"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://kumarforthepeople.wixsite.com/district15"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/KumarforthePeople/"
+      }
+    }
+  },
+  {
+    "id": "metro-council-05::Aprile Hearn",
+    "name": "Aprile Hearn",
+    "office": "Louisville Metro Council D5",
+    "level": "metro",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/aprile-hearn-1",
+      "website_url": "https://www.aprilehearn.org",
+      "facebook_url": "https://www.facebook.com/share/17GgixyT2o/",
+      "instagram_url": "https://www.instagram.com/voteforaprilehearn/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/aprile-hearn-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.aprilehearn.org"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/share/17GgixyT2o/"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/voteforaprilehearn/"
+      }
+    }
+  },
+  {
+    "id": "metro-council-07::Paula McCraney",
+    "name": "Paula McCraney",
+    "office": "Louisville Metro Council D7",
+    "level": "metro",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/paula-mccraney-1",
+      "website_url": "https://reelectmccraney.blog",
+      "facebook_url": "https://www.facebook.com/PaulaMcCraneyD7/",
+      "twitter_url": "https://x.com/PaulaMcCraneyD7"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/paula-mccraney-1"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://reelectmccraney.blog"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/PaulaMcCraneyD7/"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://x.com/PaulaMcCraneyD7"
+      }
+    }
+  },
+  {
+    "id": "metro-council-11::Melina Hettiaratchi",
+    "name": "Melina Hettiaratchi",
+    "office": "Louisville Metro Council D11",
+    "level": "metro",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/withmelina",
+      "website_url": "https://withmelina.com",
+      "facebook_url": "https://www.facebook.com/kywithmelina",
+      "instagram_url": "https://www.instagram.com/kywithmelina/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://withmelina.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/kywithmelina"
+      },
+      "twitter_url": {
+        "status": "bad",
+        "url": "https://x.com/educator_esq"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/kywithmelina/"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/donate/withmelina"
+      }
+    }
+  },
+  {
+    "id": "metro-council-15::Jennifer Chappell",
+    "name": "Jennifer Chappell",
+    "office": "Louisville Metro Council D15",
+    "level": "metro",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/electjenniferchappell",
+      "website_url": "https://jenniferformetrocouncil.com",
+      "facebook_url": "https://www.facebook.com/jenniferformetrocouncil",
+      "twitter_url": "https://twitter.com/chappellfor15",
+      "instagram_url": "https://www.instagram.com/jenniferformetrocouncil/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://jenniferformetrocouncil.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/jenniferformetrocouncil"
+      },
+      "twitter_url": {
+        "status": "ok",
+        "url": "https://twitter.com/chappellfor15"
+      },
+      "instagram_url": {
+        "status": "ok",
+        "url": "https://www.instagram.com/jenniferformetrocouncil/"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/electjenniferchappell"
+      }
+    }
+  },
+  {
+    "id": "metro-council-17::Markus Winkler",
+    "name": "Markus Winkler",
+    "office": "Louisville Metro Council D17",
+    "level": "metro",
+    "links": {
+      "actblue_url": "https://secure.actblue.com/donate/markus-winkler-2026",
+      "website_url": "https://winklerformetrocouncil.com",
+      "facebook_url": "https://www.facebook.com/winklerformetrocouncil/"
+    },
+    "verification": {
+      "actblue_url": {
+        "status": "ok",
+        "url": "https://secure.actblue.com/donate/markus-winkler-2026"
+      },
+      "website_url": {
+        "status": "ok",
+        "url": "https://winklerformetrocouncil.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/winklerformetrocouncil/"
+      }
+    }
+  },
+  {
+    "id": "metro-council-21::Betsy Ruhe",
+    "name": "Betsy Ruhe",
+    "office": "Louisville Metro Council D21",
+    "level": "metro",
+    "links": {
+      "campaign_deputy_url": "https://donate.campaigndeputy.com/betsyruhe",
+      "website_url": "https://www.ruheformetro21.com",
+      "facebook_url": "https://www.facebook.com/BetsyRuhe21/"
+    },
+    "verification": {
+      "website_url": {
+        "status": "ok",
+        "url": "https://www.ruheformetro21.com"
+      },
+      "facebook_url": {
+        "status": "ok",
+        "url": "https://www.facebook.com/BetsyRuhe21/"
+      },
+      "campaign_deputy_url": {
+        "status": "ok",
+        "url": "https://donate.campaigndeputy.com/betsyruhe"
+      }
+    }
+  },
+  {
+    "id": "metro-council-23::Ainsley Jones",
+    "name": "Ainsley Jones",
+    "office": "Louisville Metro Council D23",
+    "level": "metro",
+    "links": {},
+    "verification": {}
+  }
+]
