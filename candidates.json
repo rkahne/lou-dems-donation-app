@@ -208,32 +208,6 @@
       }
     },
     {
-      "id": "ky-senate-35",
-      "office": "Kentucky State Senate",
-      "district": 35,
-      "jurisdiction": "Kentucky",
-      "level": "state",
-      "race_type": "partisan",
-      "on_primary_ballot": true,
-      "ldp_endorsed": null,
-      "democratic_primary_candidates": [
-        "Keturah Herron"
-      ],
-      "general_election_candidate": "Keturah Herron",
-      "donate_url": null,
-      "notes": "Jefferson County district. Incumbent. Uncontested Democratic primary.",
-      "candidate_links": {
-        "Keturah Herron": {
-          "actblue_url": "https://secure.actblue.com/donate/keturah-herron-for-state-senate",
-          "campaign_deputy_url": null,
-          "website_url": "https://www.keturahherron.com/",
-          "facebook_url": "https://www.facebook.com/KeturahHerronforKYSenate/",
-          "twitter_url": "https://twitter.com/KeturahHerron",
-          "instagram_url": "https://www.instagram.com/keturah.herron/"
-        }
-      }
-    },
-    {
       "id": "ky-senate-36",
       "office": "Kentucky State Senate",
       "district": 36,
@@ -265,32 +239,6 @@
           "facebook_url": "https://www.facebook.com/LukeWhitehead24/",
           "twitter_url": null,
           "instagram_url": "https://www.instagram.com/luke_whitehead24/"
-        }
-      }
-    },
-    {
-      "id": "ky-senate-37",
-      "office": "Kentucky State Senate",
-      "district": 37,
-      "jurisdiction": "Kentucky",
-      "level": "state",
-      "race_type": "partisan",
-      "on_primary_ballot": true,
-      "ldp_endorsed": null,
-      "democratic_primary_candidates": [
-        "Gary Clemons"
-      ],
-      "general_election_candidate": "Gary Clemons",
-      "donate_url": null,
-      "notes": "Jefferson County district. Clemons won the special election December 16, 2025 to fill seat vacated when David Yates became County Clerk. Uncontested Democratic primary.",
-      "candidate_links": {
-        "Gary Clemons": {
-          "actblue_url": "https://secure.actblue.com/donate/gary-clemons-1",
-          "campaign_deputy_url": null,
-          "website_url": "https://garyclemons.com/",
-          "facebook_url": "https://www.facebook.com/GaryClemonsForSenate37",
-          "twitter_url": null,
-          "instagram_url": "https://www.instagram.com/garyclemonssenate37/"
         }
       }
     },

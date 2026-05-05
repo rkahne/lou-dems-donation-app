@@ -69,7 +69,7 @@ save_dissolved(precincts, 'LEGISDIST', HOUSE_DISTRICTS, 'data/house.geojson')
 
 # KY Senate
 print('Senate districts...')
-SENATE_DISTRICTS = [6, 7, 10, 19, 26, 33, 35, 36, 37, 38]
+SENATE_DISTRICTS = [6, 7, 10, 19, 26, 33, 36, 38]
 save_dissolved(precincts, 'SENDIST', SENATE_DISTRICTS, 'data/senate.geojson')
 
 # Congressional

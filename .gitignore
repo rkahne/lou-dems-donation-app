@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Dev/build tools — not needed on the server
+build_verify.py
+verify.html
+merge_links.py
+
+# OS
+.DS_Store
+Thumbs.db
