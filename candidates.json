@@ -23,26 +23,12 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Joshua Blanton",
-        "Charles Booker",
-        "Logan Forsythe",
-        "Amy McGrath",
-        "Dale Romans",
-        "Pamela Stevenson",
-        "Vincent Thompson"
+        "Charles Booker"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Charles Booker",
       "donate_url": null,
       "notes": "Open seat (Mitch McConnell retiring). Statewide race; all Jefferson County voters vote in this.",
       "candidate_links": {
-        "Joshua Blanton": {
-          "actblue_url": null,
-          "campaign_deputy_url": null,
-          "website_url": "https://joshuablantonsr.com/",
-          "facebook_url": null,
-          "twitter_url": "https://x.com/JoshuaBlantonSr",
-          "instagram_url": null
-        },
         "Charles Booker": {
           "actblue_url": "https://secure.actblue.com/donate/charles-booker-3",
           "campaign_deputy_url": null,
@@ -50,46 +36,6 @@
           "facebook_url": "https://www.facebook.com/Booker4KY/",
           "twitter_url": "https://twitter.com/Booker4KY",
           "instagram_url": "https://www.instagram.com/booker4ky/"
-        },
-        "Logan Forsythe": {
-          "actblue_url": "https://secure.actblue.com/donate/logan-forsythe-1",
-          "campaign_deputy_url": null,
-          "website_url": "https://loganforsythe.com/",
-          "facebook_url": "https://www.facebook.com/loganforsytheky",
-          "twitter_url": "https://x.com/loganforky",
-          "instagram_url": "https://www.instagram.com/loganforsytheky/"
-        },
-        "Amy McGrath": {
-          "actblue_url": "https://secure.actblue.com/donate/amy-mcgrath-2",
-          "campaign_deputy_url": null,
-          "website_url": "https://amymcgrath.com/",
-          "facebook_url": "https://www.facebook.com/AmyMcGrathKY",
-          "twitter_url": "https://twitter.com/AmyMcGrathKY",
-          "instagram_url": "https://www.instagram.com/amymcgrathky/"
-        },
-        "Dale Romans": {
-          "actblue_url": "https://secure.actblue.com/donate/dale-romans-1",
-          "campaign_deputy_url": null,
-          "website_url": "https://daleromans.com/",
-          "facebook_url": "https://www.facebook.com/daleforkentucky",
-          "twitter_url": "https://x.com/DaleRomansKY",
-          "instagram_url": "https://www.instagram.com/daleromans/"
-        },
-        "Pamela Stevenson": {
-          "actblue_url": "https://secure.actblue.com/donate/pamela-stevenson-1",
-          "campaign_deputy_url": null,
-          "website_url": "https://www.stevensonforsenate.com/",
-          "facebook_url": "https://www.facebook.com/PamForAG/",
-          "twitter_url": "https://x.com/ColPamStevenson",
-          "instagram_url": "https://www.instagram.com/colpamstevenson"
-        },
-        "Vincent Thompson": {
-          "actblue_url": "https://secure.actblue.com/donate/vincentthompsoncampaignfund",
-          "campaign_deputy_url": null,
-          "website_url": null,
-          "facebook_url": "https://www.facebook.com/vincentanthonythompson2026ussenate/",
-          "twitter_url": null,
-          "instagram_url": null
         }
       }
     },
@@ -129,39 +75,12 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "William Dakota Compton",
-        "David Hatfield",
-        "Hank Linderman",
         "Megan Wingfield"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Megan Wingfield",
       "donate_url": null,
       "notes": "Primarily a rural district; some western Jefferson County precincts may fall in this district. Verify geographic coverage before including in app.",
       "candidate_links": {
-        "William Dakota Compton": {
-          "actblue_url": "https://secure.actblue.com/donate/compton4congress2026",
-          "campaign_deputy_url": null,
-          "website_url": "https://www.williamcompton.com",
-          "facebook_url": "https://www.facebook.com/Compton4KY2024/",
-          "twitter_url": "https://x.com/compton4ky2022",
-          "instagram_url": "https://www.instagram.com/compton4ky2026/"
-        },
-        "David Hatfield": {
-          "actblue_url": null,
-          "campaign_deputy_url": null,
-          "website_url": null,
-          "facebook_url": null,
-          "twitter_url": null,
-          "instagram_url": null
-        },
-        "Hank Linderman": {
-          "actblue_url": null,
-          "campaign_deputy_url": null,
-          "website_url": "https://www.hank4ky.com/",
-          "facebook_url": "https://www.facebook.com/hank4ky/",
-          "twitter_url": "https://twitter.com/hank4ky",
-          "instagram_url": null
-        },
         "Megan Wingfield": {
           "actblue_url": "https://secure.actblue.com/donate/megan-wingfield-1",
           "campaign_deputy_url": null,
@@ -182,10 +101,9 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Christian Furman",
-        "Chaz Stoess"
+        "Christian Furman"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Christian Furman",
       "donate_url": null,
       "notes": "Covers northern Jefferson County (including Prospect) and Oldham County. Incumbent Republican Lindsey Tichenor. Contested Democratic primary.",
       "candidate_links": {
@@ -196,14 +114,6 @@
           "facebook_url": "https://www.facebook.com/christianforky",
           "twitter_url": "https://x.com/christianforky",
           "instagram_url": "https://www.instagram.com/christianforky"
-        },
-        "Chaz Stoess": {
-          "actblue_url": "https://secure.actblue.com/donate/chazstoess",
-          "campaign_deputy_url": null,
-          "website_url": "https://chazforky.com/",
-          "facebook_url": "https://www.facebook.com/chaz4ky",
-          "twitter_url": null,
-          "instagram_url": "https://www.instagram.com/chazforky/"
         }
       }
     },
@@ -217,10 +127,9 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Sarah Cole McIntosh",
-        "Luke Whitehead"
+        "Sarah Cole McIntosh"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Sarah Cole McIntosh",
       "donate_url": null,
       "notes": "East Louisville district. Contested Democratic primary; winner faces incumbent Republican Julie Raque Adams in general.",
       "candidate_links": {
@@ -231,14 +140,6 @@
           "facebook_url": null,
           "twitter_url": "https://x.com/SarahColeMcInt1",
           "instagram_url": null
-        },
-        "Luke Whitehead": {
-          "actblue_url": "https://secure.actblue.com/donate/luke-whitehead-1",
-          "campaign_deputy_url": null,
-          "website_url": "https://whiteheadforsenate.com/",
-          "facebook_url": "https://www.facebook.com/LukeWhitehead24/",
-          "twitter_url": null,
-          "instagram_url": "https://www.instagram.com/luke_whitehead24/"
         }
       }
     },
@@ -330,30 +231,12 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Cassie Lyles",
-        "Max Morley",
         "Mitra Subedi"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Mitra Subedi",
       "donate_url": null,
       "notes": "Three-way primary for open seat (Grossberg disavowed by party, excluded).",
       "candidate_links": {
-        "Cassie Lyles": {
-          "actblue_url": "https://secure.actblue.com/donate/cassie-lyles-1",
-          "campaign_deputy_url": null,
-          "website_url": "https://cassielyles.com/",
-          "facebook_url": "https://www.facebook.com/profile.php?id=61575024633957",
-          "twitter_url": null,
-          "instagram_url": "https://www.instagram.com/cassielyles4kyhouse30/"
-        },
-        "Max Morley": {
-          "actblue_url": null,
-          "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/maxforky",
-          "website_url": "https://www.maxforky.com/",
-          "facebook_url": "https://www.facebook.com/profile.php?id=61569505973325",
-          "twitter_url": "https://x.com/maxwellmorley",
-          "instagram_url": "https://www.instagram.com/maxforky/"
-        },
         "Mitra Subedi": {
           "actblue_url": "https://secure.actblue.com/donate/elect-mitra-subedi-as-state-representative-1",
           "campaign_deputy_url": null,
@@ -426,10 +309,9 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Jennifer Hardin",
-        "Tarah Combs LeBlanc"
+        "Jennifer Hardin"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Jennifer Hardin",
       "donate_url": null,
       "notes": "Contested Democratic primary.",
       "candidate_links": {
@@ -440,14 +322,6 @@
           "facebook_url": "https://www.facebook.com/hardin4ky/",
           "twitter_url": null,
           "instagram_url": "https://www.instagram.com/hardin4ky/"
-        },
-        "Tarah Combs LeBlanc": {
-          "actblue_url": "https://secure.actblue.com/donate/tarahforky",
-          "campaign_deputy_url": null,
-          "website_url": "https://tarahforky.com/",
-          "facebook_url": "https://www.facebook.com/profile.php?id=61584679924878",
-          "twitter_url": null,
-          "instagram_url": "https://www.instagram.com/tarahforky/"
         }
       }
     },
@@ -565,21 +439,12 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Patrick Bryant Dunegan",
         "Nima Kulkarni"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Nima Kulkarni",
       "donate_url": null,
       "notes": "Contested Democratic primary.",
       "candidate_links": {
-        "Patrick Bryant Dunegan": {
-          "actblue_url": "https://secure.actblue.com/donate/patrick-dunegan-1",
-          "campaign_deputy_url": null,
-          "website_url": null,
-          "facebook_url": null,
-          "twitter_url": null,
-          "instagram_url": null
-        },
         "Nima Kulkarni": {
           "actblue_url": null,
           "campaign_deputy_url": null,
@@ -652,10 +517,9 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Robert LeVertis Bell",
-        "Joi McAtee"
+        "Robert LeVertis Bell"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Robert LeVertis Bell",
       "donate_url": null,
       "notes": "Contested Democratic primary.",
       "candidate_links": {
@@ -666,14 +530,6 @@
           "facebook_url": "https://www.facebook.com/bell4ky/",
           "twitter_url": "https://twitter.com/bell4ky",
           "instagram_url": "https://www.instagram.com/robertlevertisbell/"
-        },
-        "Joi McAtee": {
-          "actblue_url": "https://secure.actblue.com/donate/joi-mcatee-1",
-          "campaign_deputy_url": null,
-          "website_url": "https://joimcatee.com/",
-          "facebook_url": "https://www.facebook.com/joiforkentucky/",
-          "twitter_url": null,
-          "instagram_url": "https://www.instagram.com/joiforkentucky/"
         }
       }
     },
@@ -687,30 +543,12 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Beverly Chester-Burton",
-        "Jesten S. Slaw",
         "Kenya Wade"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Kenya Wade",
       "donate_url": null,
       "notes": "Contested Democratic primary.",
       "candidate_links": {
-        "Beverly Chester-Burton": {
-          "actblue_url": "https://secure.actblue.com/donate/bcb4ky",
-          "campaign_deputy_url": null,
-          "website_url": null,
-          "facebook_url": "https://www.facebook.com/bcb4ky/",
-          "twitter_url": null,
-          "instagram_url": null
-        },
-        "Jesten S. Slaw": {
-          "actblue_url": "https://secure.actblue.com/donate/slawforky",
-          "campaign_deputy_url": null,
-          "website_url": null,
-          "facebook_url": null,
-          "twitter_url": null,
-          "instagram_url": null
-        },
         "Kenya Wade": {
           "actblue_url": "https://secure.actblue.com/donate/winwithwade.com",
           "campaign_deputy_url": null,
@@ -757,21 +595,12 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Nathan Bellows",
         "Suhas Kulkarni"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Suhas Kulkarni",
       "donate_url": null,
       "notes": "Contested Democratic primary.",
       "candidate_links": {
-        "Nathan Bellows": {
-          "actblue_url": null,
-          "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/nathanbellowsforky",
-          "website_url": "https://nathanbellowsforky.com/",
-          "facebook_url": "https://www.facebook.com/nathanbellowsforky/",
-          "twitter_url": null,
-          "instagram_url": "https://www.instagram.com/nathanbellowsforky/"
-        },
         "Suhas Kulkarni": {
           "actblue_url": "https://secure.actblue.com/donate/suhas48",
           "campaign_deputy_url": null,
@@ -792,10 +621,9 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Sarah Martin",
-        "Karl Price"
+        "Sarah Martin"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Sarah Martin",
       "donate_url": null,
       "notes": "No Republican filed. Contested Democratic primary.",
       "candidate_links": {
@@ -806,14 +634,6 @@
           "facebook_url": "https://www.facebook.com/votesarahmartin",
           "twitter_url": "https://x.com/votesarahmartin",
           "instagram_url": "https://www.instagram.com/votesarahmartin/"
-        },
-        "Karl Price": {
-          "actblue_url": null,
-          "campaign_deputy_url": null,
-          "website_url": "https://www.votekarlprice.com",
-          "facebook_url": "https://www.facebook.com/votekarlprice",
-          "twitter_url": "https://x.com/kplawlive",
-          "instagram_url": "https://www.instagram.com/votekarlprice/"
         }
       }
     },
@@ -827,21 +647,12 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Rosalind \"Roz\" Welch",
         "David Yates"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "David Yates",
       "donate_url": null,
       "notes": "No Republican filed. Contested Democratic primary. David Yates previously served as KY State Senator (District 37) before being appointed County Clerk; he resigned to run in this primary.",
       "candidate_links": {
-        "Rosalind \"Roz\" Welch": {
-          "actblue_url": "https://secure.actblue.com/donate/rosalind--roz--welch-1",
-          "campaign_deputy_url": null,
-          "website_url": "https://www.rozwelch.com",
-          "facebook_url": "https://www.facebook.com/rozwelch5022/",
-          "twitter_url": null,
-          "instagram_url": "https://www.instagram.com/roz4clerk/"
-        },
         "David Yates": {
           "actblue_url": "https://secure.actblue.com/donate/davidyates3",
           "campaign_deputy_url": null,
@@ -862,30 +673,12 @@
       "on_primary_ballot": true,
       "ldp_endorsed": null,
       "democratic_primary_candidates": [
-        "Richard Breen",
-        "Steve Healey",
         "Stephen Yancey"
       ],
-      "general_election_candidate": null,
+      "general_election_candidate": "Stephen Yancey",
       "donate_url": null,
       "notes": "One Republican filed (Alexander William Marson). Contested Democratic primary.",
       "candidate_links": {
-        "Richard Breen": {
-          "actblue_url": null,
-          "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/breen-for-sheriff",
-          "website_url": "https://www.breenforsheriff.org",
-          "facebook_url": null,
-          "twitter_url": null,
-          "instagram_url": null
-        },
-        "Steve Healey": {
-          "actblue_url": null,
-          "campaign_deputy_url": "https://donate.campaigndeputy.com/donate/healeyforsheriff",
-          "website_url": "https://www.healeyforsheriff.com",
-          "facebook_url": "https://www.facebook.com/healeyforsheriff",
-          "twitter_url": "https://x.com/SteveHealeyKY",
-          "instagram_url": "https://www.instagram.com/healeyforsheriff/"
-        },
         "Stephen Yancey": {
           "actblue_url": "https://secure.actblue.com/donate/stephen-yancey-for-sheriff",
           "campaign_deputy_url": null,
